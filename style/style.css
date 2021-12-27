@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "shrikhand";
+  src: url("Base/fonts/Shrikhand-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "roboto";
+  src: url("Base/fonts/Roboto-Regular.ttf") format("truetype");
+}
+* {
+  font-family: roboto, verdana;
+}
+
+h1 {
+  font-family: shrikhand, verdana;
+}
+
+.button {
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  border: 0px;
+  border-radius: 20px;
+  box-shadow: 2px 3px 3px lightgrey;
+  color: white;
+  padding: 10px 15px 10px 15px;
+}
+
+i {
+  color: #8d8d8d;
+  padding-right: 10px;
+}/*# sourceMappingURL=main.css.map */
