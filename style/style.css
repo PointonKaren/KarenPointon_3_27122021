@@ -4,6 +4,7 @@
   margin: auto;
   width: 500px;
   background-color: #f6f6f6;
+  margin-top: 20px;
 }
 .reservation .reservation__localisation {
   background-color: #eaeaea;
@@ -30,6 +31,79 @@
   color: #8d8d8d;
 }
 
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 500px;
+  background-color: #f6f6f6;
+  margin-top: 20px;
+  background-color: white;
+}
+.fonctionnement .fonctionnement__button {
+  background: none;
+  background-color: #f6f6f6;
+  color: black;
+  font-size: 1em;
+  max-width: none;
+  width: 300px;
+  padding: 25px 20px 25px 0;
+}
+.fonctionnement .fonctionnement__button:hover {
+  background-color: #f5edff;
+}
+.fonctionnement i:hover {
+  color: #9356DC;
+}
+.fonctionnement .fonctionnement__number {
+  background-color: #9356DC;
+  color: white;
+  border-radius: 20px;
+  padding: 2px 8px 2px 8px;
+  position: relative;
+  right: 35px;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 500px;
+  background-color: #f6f6f6;
+  margin-top: 20px;
+  margin-top: 20px;
+  height: 1500px;
+}
+.restaurants .new {
+  position: relative;
+  top: -70px;
+  left: 305px;
+}
+.restaurants .restaurants__restaurant1,
+.restaurants .restaurants__restaurant2,
+.restaurants .restaurants__restaurant3,
+.restaurants .restaurants__restaurant4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto;
+  width: 430px;
+  height: 320px;
+  background-color: white;
+  border-radius: 15px;
+}
+.restaurants .restaurants__pictures {
+  border-radius: 15px 15px 0px 0px;
+  overflow: hidden;
+  margin: -5px 0 0 0;
+}
+.restaurants h3 {
+  margin: 10px 0 4px 15px;
+}
+.restaurants p {
+  margin: 0 0 -3px 15px;
+}
+
 @font-face {
   font-family: "shrikhand";
   src: url("Base/fonts/Shrikhand-Regular.ttf") format("truetype");
@@ -47,11 +121,21 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-family: shrikhand, verdana;
+  font-weight: lighter;
+}
+
 .button {
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   border: 0px;
   border-radius: 20px;
-  box-shadow: 2px 3px 3px lightgrey;
+  box-shadow: 2px 3px 4px lightgrey;
   color: white;
   padding: 10px 15px 10px 15px;
   max-width: 200px;
@@ -61,5 +145,53 @@ h1 {
 
 i {
   color: #8d8d8d;
-  padding-right: 10px;
+  padding-right: 20px;
+  font-size: 1.2em;
+}
+
+.fa-bars {
+  position: relative;
+  right: 19px;
+  padding-right: 0px;
+}
+
+.fa-heart {
+  position: relative;
+  top: -30px;
+  left: 350px;
+  font-size: 1.5em;
+  width: 5px;
+}
+
+.fa-heart:hover {
+  color: #9356DC;
+}
+
+.new {
+  background-color: #99e2d0;
+  color: #31a488;
+  width: 60px;
+  padding: 5px 8px 5px 8px;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  width: 500px;
+  margin: auto;
+  padding: 5px 0 5px 0;
+}
+footer i {
+  font-size: 0.8em;
+  width: 3px;
+  color: white;
+}
+footer Li {
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+footer h4 {
+  padding-left: 40px;
 }/*# sourceMappingURL=style.css.map */

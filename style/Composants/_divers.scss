@@ -1,0 +1,10 @@
+@import "../Utils/variables";
+@import "../Utils/mixins";
+.new{
+   background-color: #99e2d0;
+   color: #31a488;
+   width: 60px;
+   padding: 5px 8px 5px 8px;
+   font-size: 0.9em;
+   font-weight: bold;
+}

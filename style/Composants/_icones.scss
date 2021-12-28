@@ -2,5 +2,22 @@
 @import "../Utils/mixins";
 i {
     color: #8d8d8d;
-    padding-right: 10px;
+    padding-right: 20px;
+    font-size: 1.2em;
+}
+.fa-bars
+{
+    position: relative;
+    right: 19px;
+    padding-right: 0px;
+}
+.fa-heart{
+    position: relative;
+    top: -30px;
+    left: 350px;
+    font-size: 1.5em;
+    width: 5px;
+}
+.fa-heart:hover{
+    color: $couleur-primaire;
 }
