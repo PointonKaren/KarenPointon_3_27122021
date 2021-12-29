@@ -1,2 +1,22 @@
 @import "../Utils/variables";
-@import "../Utils/mixins";
+@media only screen and (min-width: 321px) and (max-width: 799px){
+    /* style smartphones et petites tablettes en portrait */
+    .reservation,
+    .fonctionnement,
+    .restaurants,
+    footer{
+        min-width: 305px;
+        max-width: 480px;
+        width: 100%;
+        }
+    .restaurants{
+        .restaurants__restaurant1,
+        .restaurants__restaurant2,
+        .restaurants__restaurant3,
+        .restaurants__restaurant4{
+        min-width: 305px;
+        max-width: 450px;
+        width: 100%;
+        }
+    }
+}

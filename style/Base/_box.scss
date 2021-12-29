@@ -58,17 +58,31 @@
 {
     @include box;
     margin-top: 20px;
+    padding-bottom: 50px;
     height: 1500px;
-    .new{
-        position: relative;
-        top: -70px;
-        left: 305px;
-    }
     .restaurants__restaurant1,
     .restaurants__restaurant2,
     .restaurants__restaurant3,
     .restaurants__restaurant4{
-        @include restaurants;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: auto;
+        width: 430px;
+        height: 320px;
+        background-color: white;
+        border-radius: 15px;
+    }
+    .new{
+        background-color: #99e2d0;
+        color: #31a488;
+        width: 60px;
+        padding: 5px 8px 5px 8px;
+        font-size: 0.9em;
+        font-weight: bold;
+        position: relative;
+        top: 50px;
+        left: 350px;
     }
     .restaurants__pictures{
         border-radius: 15px 15px 0px 0px;
