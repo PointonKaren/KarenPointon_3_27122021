@@ -1,22 +1,41 @@
 @import "../Utils/variables";
-@media only screen and (min-width: 321px) and (max-width: 799px){
-    /* style smartphones et petites tablettes en portrait */
+@media screen and (max-width: 768px){
     .reservation,
     .fonctionnement,
     .restaurants,
     footer{
-        min-width: 305px;
-        max-width: 480px;
-        width: 100%;
+        width: 340px;
         }
+    .fonctionnement__button{
+        margin-bottom: 10px;
+    }
     .restaurants{
+        height: 1100px;
+        h2{
+            position: relative;
+            left: -10px;
+        }
         .restaurants__restaurant1,
         .restaurants__restaurant2,
         .restaurants__restaurant3,
         .restaurants__restaurant4{
-        min-width: 305px;
-        max-width: 450px;
-        width: 100%;
+            width: 310px;
+            height: 230px;
         }
+        .restaurants__restaurant1{
+            margin-bottom: -10px;
+        }
+        img{
+            width: 310px;
+        }
+        .new{
+            position: relative;
+            top: 55px;
+            left: 220px;
+        }
+    }
+    .coeur_accueil{
+        position: relative;
+        left: 260px;
     }
 }
