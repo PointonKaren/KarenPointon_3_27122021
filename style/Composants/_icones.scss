@@ -5,19 +5,27 @@ i {
     padding-right: 20px;
     font-size: 1.2em;
 }
-.fa-bars
-{
+.icone_telephone{
     position: relative;
-    right: 19px;
-    padding-right: 0px;
+    left: 5px;
 }
-.fa-heart{
+.coeur_accueil{
     position: relative;
     top: -30px;
     left: 350px;
     font-size: 1.5em;
     width: 5px;
 }
-.fa-heart:hover{
+/*.coeur_accueil:hover{
     color: $couleur-primaire;
+    background:linear-gradient(175deg, $couleur-secondaire, $couleur-primaire);
+} 
+-> survol
+.coeur_accueil:active{
+    background:linear-gradient(175deg, $couleur-secondaire, $couleur-primaire);
+}
+-> clic*/
+.fa-arrow-left{
+    color: black;
+    font-size: 0.8em;
 }
