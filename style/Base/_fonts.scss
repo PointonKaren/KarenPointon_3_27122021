@@ -1,0 +1,30 @@
+@import "../Utils/variables";
+@import "../Utils/mixins";
+@font-face {
+    font-family: 'shrikhand';
+    src: url('Base/fonts/Shrikhand-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'roboto';
+    src: url('Base/fonts/Roboto-Regular.ttf') format('truetype');
+}
+* {
+    font-family: roboto, verdana;
+  }
+  
+h1{
+    font-family: shrikhand, verdana;
+    text-align: center;
+  }
+h2{
+    margin: auto;
+    margin-bottom: 20px;
+}
+.fonctionnement h2,
+.restaurants h2{
+  margin-top: 30px;
+}
+h4{
+  font-family: shrikhand, verdana;
+  font-weight: lighter;
+}

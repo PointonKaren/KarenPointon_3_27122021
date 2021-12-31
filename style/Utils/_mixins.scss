@@ -1,0 +1,8 @@
+@import "variables";
+@mixin box{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 480px;
+    background-color: $fond;
+}
