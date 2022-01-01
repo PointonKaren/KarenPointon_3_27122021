@@ -38,4 +38,18 @@
         position: relative;
         left: 260px;
     }
+    #carte{
+        width: 360px;
+        img,
+        .menu{
+            width: 360px;
+        }
+        .menu__composition{
+            .menu__button{
+                width: 330px;
+                font-size: 0.8em;
+                height: 90px;
+            }
+        }
+    }
 }
