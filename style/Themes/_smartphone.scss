@@ -4,16 +4,15 @@
     .fonctionnement,
     .restaurants,
     footer{
-        width: 340px;
+        width: 360px;
+        text-align: left;
         }
-    .fonctionnement__button{
-        margin-bottom: 10px;
-    }
     .restaurants{
-        height: 1100px;
-        h2{
-            position: relative;
-            left: -10px;
+        height: auto;
+        width: 340px;
+        margin-top: 30px;
+        .restaurants__cartes{
+            height: 1150px;
         }
         .restaurants__restaurant1,
         .restaurants__restaurant2,
@@ -22,20 +21,44 @@
             width: 310px;
             height: 230px;
         }
-        .restaurants__restaurant1{
-            margin-bottom: -10px;
-        }
         img{
             width: 310px;
         }
         .new{
             position: relative;
-            top: 55px;
+            top: 20px;
             left: 220px;
         }
     }
     .coeur_accueil{
         position: relative;
         left: 260px;
+    }
+    #carte{
+        width: 360px;
+        img{
+            width: 360px;
+        }
+        .menu__title{
+            h1{
+                width: 360px;
+                text-align: left;
+                padding-left: 20px;
+            }
+        }
+        .menu{
+            width: 360px;
+        }
+        .menu__composition{
+            .menu__button{
+                width: 330px;
+                font-size: 0.8em;
+                height: 90px;
+            }
+        }
+    }
+    .fa-arrow-left{
+        position: relative;
+        left: -30px;
     }
 }
