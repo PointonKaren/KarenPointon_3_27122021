@@ -32,6 +32,7 @@
     @include box;
     width: 480px;
     background-color: white;
+    margin-bottom: 40px;
     .fonctionnement__button{
         background: none;
         background-color: $fond;
@@ -40,10 +41,8 @@
         max-width: none;
         width: 300px;
         padding: 25px 20px 25px 0;
+        margin-bottom: 10px;
     }
-    h2{
-        margin: 30px 0 20px 70px;
-      }
     .fonctionnement__button:hover{
         background-color: #f5edff;
     }
@@ -68,12 +67,17 @@ fonctionne, mais tous les i sont colorés dès que la souris survole le bloc "fo
 {
     @include box;
     margin-top: 20px;
-    padding-bottom: 50px;
-    height: 1400px;
-    width: 480px;
-    h2{
-        margin: 30px 0 -20px 25px;
-      }
+    width: 950px;
+    margin: auto;
+    border-radius: 15px 15px 0 0;
+    .restaurants__cartes{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 750px;
+        padding-bottom: 50px;
+    }
     .restaurants__restaurant1,
     .restaurants__restaurant2,
     .restaurants__restaurant3,
@@ -87,8 +91,22 @@ fonctionne, mais tous les i sont colorés dès que la souris survole le bloc "fo
         background-color: white;
         border-radius: 15px;
     }
-    .restaurants__restaurant1{
-        margin-bottom: 0px;
+    .restaurants__restaurant1,
+    .restaurants__restaurant2{
+        height: 290px;
+        .restaurants__pictures{
+        position: relative;
+        top: -23px;
+        }
+        h3,
+        p{
+            position: relative;
+            top: -20px;
+        }
+        .coeur_accueil{
+            position: relative;
+            top: -50px;
+        }
     }
     .new{
         background-color: #99e2d0;
@@ -99,8 +117,8 @@ fonctionne, mais tous les i sont colorés dès que la souris survole le bloc "fo
         font-size: 0.9em;
         font-weight: bold;
         position: relative;
-        top: 50px;
-        left: 350px;
+        top: 25px;
+        left: 340px;
         z-index: 2;
     }
     img{
@@ -116,81 +134,5 @@ fonctionne, mais tous les i sont colorés dès que la souris survole le bloc "fo
     }
     p{
         margin: 0 0 -3px 15px;
-    }
-}
-#carte{
-    height: auto;
-    background-color: $fond;
-    width: 480px;
-    margin: auto;
-    margin-top: -15px;
-    margin-bottom: -50px;
-    .menu__pictures{
-        text-align: center;
-    }
-    img{
-        width: 480px;
-    }
-    .menu__title{
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 15px;
-        border-radius: 50px 50px 0px 0px;
-        background-color: $fond;
-        position: relative;
-        top: -75px;
-        h1{
-            padding-left: 30px;
-        }
-    }
-    .menu{
-        @include box;
-        width: 480px;
-        position: relative;
-        top: -75px;
-        margin-top: -20px;
-    }
-    .menu__composition{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        h2{
-            font-weight: lighter;
-            text-transform: uppercase;
-            color: #747474;
-            border-bottom: 3px $couleur-tertiaire solid;
-            width: 60px;
-            margin-left: 20px;
-        }
-        .menu__button{
-            background: none;
-            color: black;
-            background-color: white;
-            width: 430px;
-            height: 80px;
-            text-align: left;
-            margin-bottom: 10px;
-            word-wrap: break-word;
-        }
-        h3{
-            margin: 5px 0 5px 0;
-        }
-        .menu__detail{
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        p{
-            margin: 0 0 -3px 0;
-            font-size: 1.2em;
-        }
-        .menu__prix{
-            color: #333333;
-            font-weight: bold;           
-        }
-    }
-    #menu_commander{
-        margin-top: 40px;
     }
 }
