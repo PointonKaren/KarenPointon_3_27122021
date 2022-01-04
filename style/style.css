@@ -182,17 +182,18 @@ fonctionne, mais tous les i sont colorés dès que la souris survole le bloc "fo
   width: 60px;
   margin-left: 20px;
 }
-#carte .menu__composition .menu__button {
-  background: none;
-  color: black;
+#carte .menu__composition article {
+  border-radius: 20px;
+  box-shadow: 2px 3px 4px lightgrey;
+  padding: 10px 15px 10px 15px;
+  margin: 10px 0 10px 0;
+  align-self: center;
   background-color: white;
   width: 430px;
-  height: 80px;
+  height: 60px;
   text-align: left;
-  margin-bottom: 10px;
-  word-wrap: break-word;
 }
-#carte .menu__composition h3 {
+#carte .menu__composition article h3 {
   margin: 5px 0 5px 0;
 }
 #carte .menu__composition .menu__detail {
@@ -202,6 +203,12 @@ fonctionne, mais tous les i sont colorés dès que la souris survole le bloc "fo
 #carte .menu__composition p {
   margin: 0 0 -3px 0;
   font-size: 1.2em;
+}
+#carte .menu__composition .menu__nom {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 250px;
 }
 #carte .menu__composition .menu__prix {
   color: #333333;
@@ -411,10 +418,9 @@ footer {
   #carte .menu {
     width: 360px;
   }
-  #carte .menu__composition .menu__button {
-    width: 330px;
+  #carte .menu__composition article {
+    width: 310px;
     font-size: 0.8em;
-    height: 90px;
   }
 
   .fa-arrow-left {
