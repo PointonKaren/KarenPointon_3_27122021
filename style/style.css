@@ -1,37 +1,37 @@
 @charset "UTF-8";
-.reservation {
+#reservation {
   display: flex;
   flex-direction: column;
   margin: auto;
   background-color: #f6f6f6;
   width: 480px;
 }
-.reservation .reservation__localisation {
+#reservation .reservation__localisation {
   background-color: #eaeaea;
   box-shadow: inset 0 12px 10px -10px #8d8d8d;
   display: flex;
   justify-content: center;
 }
-.reservation .reservation__localisation .fa-map-marker-alt {
+#reservation .reservation__localisation .fa-map-marker-alt {
   position: relative;
   top: 18px;
   color: #353535;
 }
-.reservation .reservation__localisation p {
+#reservation .reservation__localisation p {
   color: #353535;
 }
-.reservation .reservation__menu {
+#reservation .reservation__menu {
   width: 75%;
   margin: auto;
   margin-top: 20px;
   text-align: center;
   word-wrap: break-word;
 }
-.reservation .reservation__menu p {
+#reservation .reservation__menu p {
   color: #8d8d8d;
 }
 
-.fonctionnement {
+#fonctionnement {
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -41,7 +41,7 @@
   margin-bottom: 40px;
   /*Fonctionne uniquement lorsque l'icone est survolée*/
 }
-.fonctionnement .fonctionnement__button {
+#fonctionnement .fonctionnement__button {
   background: none;
   background-color: #f6f6f6;
   color: black;
@@ -51,13 +51,13 @@
   padding: 25px 20px 25px 0;
   margin-bottom: 10px;
 }
-.fonctionnement .fonctionnement__button:hover {
+#fonctionnement .fonctionnement__button:hover {
   background-color: #f5edff;
 }
-.fonctionnement i:hover {
+#fonctionnement i:hover {
   color: #9356DC;
 }
-.fonctionnement span {
+#fonctionnement span {
   background-color: #9356DC;
   color: white;
   border-radius: 20px;
@@ -66,11 +66,11 @@
   right: 35px;
 }
 
-/*.fonctionnement:hover i{
+/*.fonctionnement:hover i {
     color: $couleur-primaire;
 }
 fonctionne, mais tous les i sont colorés dès que la souris survole le bloc "fonctionnement", même si le bouton n'est pas survolé*/
-.restaurants {
+#restaurants {
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -80,7 +80,7 @@ fonctionne, mais tous les i sont colorés dès que la souris survole le bloc "fo
   margin: auto;
   border-radius: 15px 15px 0 0;
 }
-.restaurants .restaurants__cartes {
+#restaurants .restaurants__choix {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -88,10 +88,7 @@ fonctionne, mais tous les i sont colorés dès que la souris survole le bloc "fo
   height: 750px;
   padding-bottom: 50px;
 }
-.restaurants .restaurants__restaurant1,
-.restaurants .restaurants__restaurant2,
-.restaurants .restaurants__restaurant3,
-.restaurants .restaurants__restaurant4 {
+#restaurants article {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -101,28 +98,15 @@ fonctionne, mais tous les i sont colorés dès que la souris survole le bloc "fo
   background-color: white;
   border-radius: 15px;
 }
-.restaurants .restaurants__restaurant1,
-.restaurants .restaurants__restaurant2 {
-  height: 290px;
+#restaurants article img {
+  border-radius: 15px 15px 0px 0px;
+  width: 430px;
+  height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  /*z-index: 1;*/
 }
-.restaurants .restaurants__restaurant1 .restaurants__pictures,
-.restaurants .restaurants__restaurant2 .restaurants__pictures {
-  position: relative;
-  top: -23px;
-}
-.restaurants .restaurants__restaurant1 h3,
-.restaurants .restaurants__restaurant1 p,
-.restaurants .restaurants__restaurant2 h3,
-.restaurants .restaurants__restaurant2 p {
-  position: relative;
-  top: -20px;
-}
-.restaurants .restaurants__restaurant1 .coeur_accueil,
-.restaurants .restaurants__restaurant2 .coeur_accueil {
-  position: relative;
-  top: -50px;
-}
-.restaurants .new {
+#restaurants article .new {
   background-color: #99e2d0;
   color: #31a488;
   width: 60px;
@@ -131,24 +115,18 @@ fonctionne, mais tous les i sont colorés dès que la souris survole le bloc "fo
   font-size: 0.9em;
   font-weight: bold;
   position: relative;
-  top: 25px;
-  left: 340px;
+  top: -270px;
+  left: 310px;
   z-index: 2;
 }
-.restaurants img {
-  border-radius: 15px 15px 0px 0px;
-  width: 430px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: relative;
-  left: -15px;
-  z-index: 1;
-}
-.restaurants h3 {
+#restaurants article h3 {
   margin: 10px 0 4px 15px;
 }
-.restaurants p {
+#restaurants article p {
   margin: 0 0 -3px 15px;
+}
+#restaurants article .restaurants__pictures {
+  margin: 0;
 }
 
 #carte {
@@ -163,6 +141,9 @@ fonctionne, mais tous les i sont colorés dès que la souris survole le bloc "fo
 }
 #carte img {
   width: 480px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 320px;
 }
 #carte .menu__title {
   margin: auto;
@@ -295,12 +276,12 @@ i {
   left: 350px;
 }
 
-/*.coeur_accueil:hover{
+/*.coeur_accueil:hover {
     color: $couleur-primaire;
     background:linear-gradient(175deg, $couleur-secondaire, $couleur-primaire);
 } 
 -> survol
-.coeur_accueil:active{
+.coeur_accueil:active {
     background:linear-gradient(175deg, $couleur-secondaire, $couleur-primaire);
 }
 -> clic*/
@@ -335,10 +316,13 @@ footer Li {
 footer h4 {
   padding-left: 40px;
 }
+footer a {
+  color: white;
+}
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
-  .fonctionnement,
-.restaurants,
+  #fonctionnement,
+#restaurants,
 footer {
     width: 80%;
     max-width: 950px;
@@ -349,74 +333,66 @@ footer {
     margin-bottom: 10px;
   }
 
-  .restaurants {
-    height: 600px;
+  #restaurants {
+    height: 900px;
     margin-top: 30px;
   }
-  .restaurants .restaurants__restaurant1,
-.restaurants .restaurants__restaurant2,
-.restaurants .restaurants__restaurant3,
-.restaurants .restaurants__restaurant4 {
-    width: 260px;
-    max-width: 900px;
-    height: 40%;
-    max-height: 300px;
+  #restaurants article {
+    /*width: 260px;*/
+    width: 300px;
+    height: 300px;
     margin-bottom: 20px;
   }
-  .restaurants .restaurants__pictures {
+  #restaurants article .restaurants__pictures {
     margin: auto;
   }
-  .restaurants img {
+  #restaurants article img {
     width: 100%;
     max-width: 312px;
     position: relative;
     left: 0px;
   }
-  .restaurants .new {
+  #restaurants article .new {
     position: relative;
-    top: 20px;
-    left: 170px;
+    top: -260px;
+    left: 175px;
   }
-
-  .coeur_accueil {
+  #restaurants article .coeur_accueil {
     position: relative;
-    left: 200px;
+    left: 250px;
   }
 }
 @media screen and (max-width: 768px) {
-  .reservation,
-.fonctionnement,
-.restaurants,
+  #reservation,
+#fonctionnement,
 footer {
     width: 360px;
     text-align: left;
   }
 
-  .restaurants {
+  #restaurants {
     height: auto;
-    width: 340px;
+    width: 360px;
     margin-top: 30px;
+    border-radius: 0px;
   }
-  .restaurants .restaurants__cartes {
-    height: 1150px;
+  #restaurants .restaurants__choix {
+    height: 1050px;
   }
-  .restaurants .restaurants__restaurant1,
-.restaurants .restaurants__restaurant2,
-.restaurants .restaurants__restaurant3,
-.restaurants .restaurants__restaurant4 {
+  #restaurants .restaurants__choix article {
     width: 310px;
     height: 230px;
   }
-  .restaurants img {
+  #restaurants .restaurants__choix article img {
     width: 310px;
+    height: 160px;
   }
-  .restaurants .new {
+  #restaurants .restaurants__choix article .new {
     position: relative;
-    top: 20px;
-    left: 220px;
+    top: -210px;
+    left: 190px;
   }
-
-  .coeur_accueil {
+  #restaurants .restaurants__choix article .coeur_accueil {
     position: relative;
     left: 260px;
   }

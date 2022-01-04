@@ -1,46 +1,42 @@
 @import "../Utils/variables";
 @import "../Utils/mixins";
-@media screen and (min-width: 769px) and (max-width: 992px){
-    .fonctionnement,
-    .restaurants,
-    footer{
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    #fonctionnement,
+    #restaurants,
+    footer {
         width: 80%;
         max-width: 950px;
         padding-top: 20px;
         }
-    .fonctionnement__button{
+    .fonctionnement__button {
         margin-bottom: 10px;
     }
-    .restaurants{
-        height: 600px;
+    #restaurants {
+        height: 900px;
         margin-top: 30px;
-        .restaurants__restaurant1,
-        .restaurants__restaurant2,
-        .restaurants__restaurant3,
-        .restaurants__restaurant4{
-            width: 260px;
-            max-width: 900px;
-            height: 40%;
-            max-height: 300px;
+        article {
+            /*width: 260px;*/
+            width: 300px;
+            height: 300px;
             margin-bottom: 20px;
+            .restaurants__pictures {
+                margin: auto;
+            }
+            img {
+                width: 100%;
+                max-width: 312px;
+                position: relative;
+                left: 0px;   
+            }
+            .new {
+                position: relative;
+                top: -260px;
+                left: 175px;
+            }
+            .coeur_accueil {
+                position: relative;
+                left: 250px;
+            }
         }
-        .restaurants__pictures{
-            margin: auto;
-        }
-        img{
-            width: 100%;
-            max-width: 312px;
-            position: relative;
-            left: 0px;   
-        }
-        .new{
-            position: relative;
-            top: 20px;
-            left: 170px;
-        }
-    }
-    .coeur_accueil{
-        position: relative;
-        left: 200px;
     }
 }

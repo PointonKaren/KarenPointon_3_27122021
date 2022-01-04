@@ -1,18 +1,20 @@
 @import "../Utils/variables";
 @import "../Utils/mixins";
-#carte{
+#carte {
     background-color: $fond;
     width: 480px;
     margin: auto;
     margin-top: -15px;
     margin-bottom: -50px;
-    .menu__pictures{
+    .menu__pictures {
         text-align: center;
     }
-    img{
+    img {
         width: 480px;
+        object-fit: cover;
+        height: 320px;
     }
-    .menu__title{
+    .menu__title {
         margin: auto;
         display: flex;
         justify-content: space-between;
@@ -21,23 +23,23 @@
         background-color: $fond;
         position: relative;
         top: -75px;
-        h1{
+        h1 {
             text-align: center;
             width: 480px;
         }
     }
-    .menu{
+    .menu {
         @include box;
         width: 480px;
         position: relative;
         top: -75px;
         margin-top: -20px;
     }
-    .menu__composition{
+    .menu__composition {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        h2{
+        h2 {
             font-weight: lighter;
             text-transform: uppercase;
             color: #747474;
@@ -45,7 +47,7 @@
             width: 60px;
             margin-left: 20px;
         }
-        .menu__button{
+        .menu__button {
             background: none;
             color: black;
             background-color: white;
@@ -55,24 +57,24 @@
             margin-bottom: 10px;
             word-wrap: break-word;
         }
-        h3{
+        h3 {
             margin: 5px 0 5px 0;
         }
-        .menu__detail{
+        .menu__detail {
             display: flex;
             justify-content: space-between;
         }
         
-        p{
+        p {
             margin: 0 0 -3px 0;
             font-size: 1.2em;
         }
-        .menu__prix{
+        .menu__prix {
             color: #333333;
             font-weight: bold;           
         }
     }
-    #menu_commander{
+    #menu_commander {
         margin-top: 40px;
     }
 }
