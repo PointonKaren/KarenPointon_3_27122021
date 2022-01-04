@@ -1,18 +1,20 @@
 @import "../Utils/variables";
 @import "../Utils/mixins";
-#carte{
+#carte {
     background-color: $fond;
     width: 480px;
     margin: auto;
     margin-top: -15px;
     margin-bottom: -50px;
-    .menu__pictures{
+    .menu__pictures {
         text-align: center;
     }
-    img{
+    img {
         width: 480px;
+        object-fit: cover;
+        height: 320px;
     }
-    .menu__title{
+    .menu__title {
         margin: auto;
         display: flex;
         justify-content: space-between;
@@ -21,23 +23,23 @@
         background-color: $fond;
         position: relative;
         top: -75px;
-        h1{
+        h1 {
             text-align: center;
             width: 480px;
         }
     }
-    .menu{
+    .menu {
         @include box;
         width: 480px;
         position: relative;
         top: -75px;
         margin-top: -20px;
     }
-    .menu__composition{
+    .menu__composition {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        h2{
+        h2 {
             font-weight: lighter;
             text-transform: uppercase;
             color: #747474;
@@ -45,34 +47,40 @@
             width: 60px;
             margin-left: 20px;
         }
-        .menu__button{
-            background: none;
-            color: black;
+        article {
+            border-radius: 20px;
+            box-shadow: 2px 3px 4px lightgrey;
+            padding: 10px 15px 10px 15px;
+            margin: 10px 0 10px 0;
+            align-self: center;
             background-color: white;
             width: 430px;
-            height: 80px;
-            text-align: left;
-            margin-bottom: 10px;
-            word-wrap: break-word;
+            height: 60px;
+            text-align: left;        
+            h3 {
+                margin: 5px 0 5px 0;
+            }
         }
-        h3{
-            margin: 5px 0 5px 0;
-        }
-        .menu__detail{
+        .menu__detail {
             display: flex;
             justify-content: space-between;
         }
-        
         p{
             margin: 0 0 -3px 0;
             font-size: 1.2em;
         }
-        .menu__prix{
+        .menu__nom {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 250px;
+        }
+        .menu__prix {
             color: #333333;
-            font-weight: bold;           
+            font-weight: bold;    
         }
     }
-    #menu_commander{
+    #menu_commander {
         margin-top: 40px;
     }
 }

@@ -12,7 +12,7 @@
     <header>
         <h1>ohmyfood</h1>
     </header>
-    <section class="reservation">
+    <section id="reservation">
         <div class="reservation__localisation">
             <i class="fas fa-map-marker-alt map"></i>
             <p>Paris, Belleville</p>
@@ -23,7 +23,7 @@
         </div>
         <button>Explorer nos restaurants</button>
     </section>
-    <section class="fonctionnement">
+    <section id="fonctionnement">
         <h2>Fonctionnement</h2>
         <button class="fonctionnement__button">
             <span>1</span>
@@ -38,33 +38,33 @@
             <i class="fas fa-store"></i>Dégustez au restaurant
         </button>
     </section>
-    <section class="restaurants">
+    <section id="restaurants">
         <h2>Restaurants</h2>
-        <div class="restaurants__cartes">
-            <div class="restaurants__restaurant1">
-                <span class="new">Nouveau</span>
-                <a href="la_palette_du_gout.html" target="blank">
+        <div class="restaurants__choix">
+            <article class="restaurants__cartes"> 
+                <a href="la_palette_du_gout.html">
                     <p class="restaurants__pictures">
                         <img src="images/la_palette_du_gout.jpg" alt="Palette du goût" title="Palette du goût" />
                     </p>
                     <h3>La palette du goût</h3>
                     <p>Ménilmontant</p>
                     <i class="far fa-heart coeur_accueil"></i>
+                    <span class="new">Nouveau</span>
                 </a>
-            </div>
-            <div class="restaurants__restaurant2">
-                <span class="new">Nouveau</span>
-                <a href="la_note_enchantee.html" target="blank">
+            </article>
+            <article class="restaurants__cartes">
+                <a href="la_note_enchantee.html">
                     <p class="restaurants__pictures">
                         <img src="images/note_enchantee.jpg" alt="Note enchantée" title="Note enchantée" />
                     </p>
                     <h3>La note enchantée</h3>
                     <p>Charonne</p>
                     <i class="far fa-heart coeur_accueil"></i>
+                    <span class="new">Nouveau</span>
                 </a>
-            </div>
-            <div class="restaurants__restaurant3">
-                <a href="a_la_francaise.html" target="blank">
+            </article>
+            <article class="restaurants__cartes">
+                <a href="a_la_francaise.html">
                     <p class="restaurants__pictures">
                         <img src="images/a_la_francaise.jpg" alt="À la française" title="À la française" />
                     </p>
@@ -72,9 +72,9 @@
                     <p>Cité Rouge</p>
                     <i class="far fa-heart coeur_accueil"></i>
                 </a>
-            </div>
-            <div class="restaurants__restaurant4">
-                <a href="delice_des_sens.html" target="blank">
+            </article>
+            <article class="restaurants__cartes">
+                <a href="delice_des_sens.html">
                     <p class="restaurants__pictures">
                         <img src="images/delice_des_sens.jpg" alt="Délice des sens" title="Délice des sens" />
                     </p>
@@ -82,7 +82,7 @@
                     <p>Folie-Méricourt</p>
                     <i class="far fa-heart coeur_accueil"></i>
                 </a>
-            </div>
+            </article>
         </div>
     </section>
     <footer>
@@ -91,7 +91,7 @@
             <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
             <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
             <li>Mentions légales</li>
-            <li>Contact</li>
+            <li><a href="mailto:#">Contact</a></li>
         </ul>
     </footer>
 </body>

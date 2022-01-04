@@ -1,63 +1,61 @@
 @import "../Utils/variables";
-@media screen and (max-width: 768px){
-    .reservation,
-    .fonctionnement,
-    .restaurants,
-    footer{
+@media screen and (max-width: 768px) {
+    #reservation,
+    #fonctionnement,
+    footer {
         width: 360px;
         text-align: left;
         }
-    .restaurants{
+    #restaurants {
         height: auto;
-        width: 340px;
-        margin-top: 30px;
-        .restaurants__cartes{
-            height: 1150px;
-        }
-        .restaurants__restaurant1,
-        .restaurants__restaurant2,
-        .restaurants__restaurant3,
-        .restaurants__restaurant4{
-            width: 310px;
-            height: 230px;
-        }
-        img{
-            width: 310px;
-        }
-        .new{
-            position: relative;
-            top: 20px;
-            left: 220px;
-        }
-    }
-    .coeur_accueil{
-        position: relative;
-        left: 260px;
-    }
-    #carte{
         width: 360px;
-        img{
+        margin-top: 30px;
+        border-radius: 0px;
+            .restaurants__choix {
+                height: 1050px;
+                article {
+                    width: 310px;
+                    height: 230px;
+                
+                    img {
+                        width: 310px;
+                        height: 160px;
+                    }
+                    .new {
+                        position: relative;
+                        top: -210px;
+                        left: 190px;
+                    }
+                    .coeur_accueil {
+                        position: relative;
+                        left: 260px;
+                    }
+                }
+            }
+    }
+    #carte {
+        width: 360px;
+        img {
             width: 360px;
         }
-        .menu__title{
-            h1{
+        .menu__title {
+            h1 {
                 width: 360px;
                 text-align: left;
                 padding-left: 20px;
             }
         }
-        .menu{
+        .menu {
             width: 360px;
         }
-        .menu__composition{
-            .menu__button{
-                width: 330px;
+        .menu__composition {
+            article {
+                width: 310px;
                 font-size: 0.8em;
-                height: 90px;
             }
         }
     }
-    .fa-arrow-left{
+    .fa-arrow-left {
         position: relative;
         left: -30px;
     }
