@@ -192,29 +192,74 @@ fonctionne, mais tous les i sont colorés dès que la souris survole le bloc "fo
   width: 430px;
   height: 60px;
   text-align: left;
+  overflow: hidden;
 }
 #carte .menu__composition article h3 {
   margin: 5px 0 5px 0;
 }
-#carte .menu__composition .menu__detail {
+#carte .menu__composition article .menu__prix {
+  color: #333333;
+  font-weight: bold;
+  position: relative;
+  left: 90px;
+  transform: translateX(0px);
+}
+#carte .menu__composition article .validate {
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  height: 80px;
+  width: 70px;
+  position: relative;
+  top: -45px;
+  left: 25px;
+  opacity: 0;
+  transform: translateX(70px);
+}
+#carte .menu__composition article .validate .check {
+  width: 0;
+  border-radius: 50px;
+  position: relative;
+  top: 30px;
+  left: 20px;
+  color: white;
+  rotate: 90deg;
+}
+#carte .menu__composition article:hover {
+  cursor: pointer;
+}
+#carte .menu__composition article:hover .menu__prix {
+  transform: translateX(-70px);
+  transition: transform 300ms;
+}
+#carte .menu__composition article:hover .validate {
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 300ms;
+}
+#carte .menu__composition article:hover .validate .check {
+  transform: rotate(270deg);
+  transition: transform 300ms ease-in;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+#carte .menu__composition article:hover .menu__nom {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#carte .menu__composition article .menu__detail {
   display: flex;
   justify-content: space-between;
+  width: 420px;
 }
-#carte .menu__composition p {
+#carte .menu__composition article .menu__detail p {
   margin: 0 0 -3px 0;
   font-size: 1.2em;
 }
-#carte .menu__composition .menu__nom {
-  text-overflow: ellipsis;
+#carte .menu__composition article .menu__detail .menu__nom {
+  width: 280px;
   white-space: nowrap;
-  overflow: hidden;
-  width: 250px;
 }
-#carte .menu__composition .menu__prix {
-  color: #333333;
-  font-weight: bold;
-}
-#carte #menu_commander {
+#carte .menu__composition article #menu_commander {
   margin-top: 40px;
 }
 
@@ -283,17 +328,12 @@ i {
   left: 350px;
 }
 
-/*.coeur_accueil:hover {
-    color: $couleur-primaire;
-    background:linear-gradient(175deg, $couleur-secondaire, $couleur-primaire);
-} 
--> survol
-.coeur_accueil:active {
-    background:linear-gradient(175deg, $couleur-secondaire, $couleur-primaire);
-}
--> clic*/
 .coeur_menu {
   padding: 20px 50px 0 0;
+}
+.coeur_menu:active {
+  /*color: transparent;*/
+  background: linear-gradient(45deg, #FF79DA, #9356DC);
 }
 
 .fa-arrow-left {
@@ -421,6 +461,10 @@ footer {
   #carte .menu__composition article {
     width: 310px;
     font-size: 0.8em;
+  }
+  #carte .menu__composition article .menu__prix {
+    position: relative;
+    left: 50px;
   }
 
   .fa-arrow-left {

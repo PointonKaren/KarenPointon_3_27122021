@@ -18,17 +18,12 @@ i {
     top: -30px;
     left: 350px;
 }
-/*.coeur_accueil:hover {
-    color: $couleur-primaire;
-    background:linear-gradient(175deg, $couleur-secondaire, $couleur-primaire);
-} 
--> survol
-.coeur_accueil:active {
-    background:linear-gradient(175deg, $couleur-secondaire, $couleur-primaire);
-}
--> clic*/
 .coeur_menu {
     padding: 20px 50px 0 0;
+    &:active {
+        /*color: transparent;*/
+        background:linear-gradient(45deg, $couleur-secondaire, $couleur-primaire);
+    }
 }
 .fa-arrow-left {
     color: #333333;;

@@ -52,6 +52,10 @@
             article {
                 width: 310px;
                 font-size: 0.8em;
+                .menu__prix {
+                    position: relative;
+                    left: 50px;
+                }
             }
         }
     }
