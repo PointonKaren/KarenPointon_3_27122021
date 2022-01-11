@@ -1,32 +1,73 @@
 @import "../Utils/variables";
 @import "../Utils/mixins";
+
 i {
     color: #8d8d8d;
     padding-right: 20px;
     font-size: 1.2em;
 }
+
 .icone_telephone {
     position: relative;
     left: 5px;
 }
+
 .fa-heart {
     font-size: 1.5em;
     width: 5px;
 }
-.coeur_accueil {
+
+.coeur_accueil_vide {
     position: relative;
     top: -30px;
     left: 350px;
-}
-.coeur_menu {
-    padding: 20px 50px 0 0;
-    &:active {
-        /*color: transparent;*/
-        background:linear-gradient(45deg, $couleur-secondaire, $couleur-primaire);
+
+    &:hover {
+        color: transparent;
     }
 }
+.coeur_accueil_plein {
+    position: relative;
+    top: -30px;
+    left: 325px;color: transparent;
+    z-index: 1;
+
+    &:hover {
+        background: linear-gradient($couleur-primaire, $couleur-secondaire);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.coeur_menu_vide {
+    position: relative;
+    top: 30px;
+    left: -30px;
+    &:hover /*:active pour clic*/{
+        color: transparent;
+    }
+}
+
+.coeur_menu_plein {
+    position: relative;
+    top: 30px;
+    left: -55px;
+    color: transparent;
+    z-index: 1;
+
+    &:hover {
+        cursor: pointer;
+        background: linear-gradient(360deg, $couleur-secondaire 60%, $couleur-primaire 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
 .fa-arrow-left {
-    color: #333333;;
+    color: #333333;
+    ;
     font-size: 0.8em;
     position: relative;
     left: -70px;

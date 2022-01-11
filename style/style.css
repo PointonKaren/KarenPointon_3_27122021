@@ -116,7 +116,7 @@ fonctionne, mais tous les i sont colorés dès que la souris survole le bloc "fo
   font-weight: bold;
   position: relative;
   top: -270px;
-  left: 310px;
+  left: 290px;
   z-index: 2;
 }
 #restaurants article h3 {
@@ -322,18 +322,51 @@ i {
   width: 5px;
 }
 
-.coeur_accueil {
+.coeur_accueil_vide {
   position: relative;
   top: -30px;
   left: 350px;
 }
-
-.coeur_menu {
-  padding: 20px 50px 0 0;
+.coeur_accueil_vide:hover {
+  color: transparent;
 }
-.coeur_menu:active {
-  /*color: transparent;*/
-  background: linear-gradient(45deg, #FF79DA, #9356DC);
+
+.coeur_accueil_plein {
+  position: relative;
+  top: -30px;
+  left: 325px;
+  color: transparent;
+  z-index: 1;
+}
+.coeur_accueil_plein:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.coeur_menu_vide {
+  position: relative;
+  top: 30px;
+  left: -30px;
+}
+.coeur_menu_vide:hover {
+  color: transparent;
+}
+
+.coeur_menu_plein {
+  position: relative;
+  top: 30px;
+  left: -55px;
+  color: transparent;
+  z-index: 1;
+}
+.coeur_menu_plein:hover {
+  cursor: pointer;
+  background: linear-gradient(360deg, #FF79DA 60%, #9356DC 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .fa-arrow-left {
@@ -371,7 +404,7 @@ footer a {
   #fonctionnement,
 #restaurants,
 footer {
-    width: 80%;
+    width: 480px;
     max-width: 950px;
     padding-top: 20px;
   }
@@ -385,7 +418,6 @@ footer {
     margin-top: 30px;
   }
   #restaurants article {
-    /*width: 260px;*/
     width: 300px;
     height: 300px;
     margin-bottom: 20px;
@@ -413,12 +445,11 @@ footer {
   #reservation,
 #fonctionnement,
 footer {
-    width: 360px;
+    width: 100%;
     text-align: left;
   }
 
   #restaurants {
-    height: auto;
     width: 360px;
     margin-top: 30px;
     border-radius: 0px;
@@ -451,9 +482,13 @@ footer {
     width: 360px;
   }
   #carte .menu__title h1 {
+    font-size: 1.8em;
     width: 360px;
     text-align: left;
     padding-left: 20px;
+  }
+  #carte h2 {
+    font-size: 1em;
   }
   #carte .menu {
     width: 360px;
@@ -462,9 +497,15 @@ footer {
     width: 310px;
     font-size: 0.8em;
   }
-  #carte .menu__composition article .menu__prix {
+  #carte .menu__composition article h3 {
+    font-size: 1.4em;
+  }
+  #carte .menu__composition article .menu__detail {
+    font-size: 1em;
+  }
+  #carte .menu__composition article .menu__detail .menu__prix {
     position: relative;
-    left: 50px;
+    left: -20px;
   }
 
   .fa-arrow-left {
