@@ -1,121 +1,153 @@
 @import "../Utils/variables";
 @import "../Utils/mixins";
-#reservation {
-    @include box;
-    width: 480px;
-    .reservation__localisation {
-        background-color: #eaeaea;
-        box-shadow: inset 0 12px 10px -10px #8d8d8d;
-        display: flex;
-        justify-content: center;
-        .fa-map-marker-alt {
+
+#body_accueil {
+    width: 1200px;
+    margin: auto;
+
+    footer {
+        li {
+            margin: auto;
+        }
+    }
+
+    #reservation {
+        @include box;
+        width: 480px;
+
+        .reservation__localisation {
+            background-color: #eaeaea;
+            box-shadow: inset 0 12px 10px -10px #8d8d8d;
+            display: flex;
+            justify-content: center;
+
+            .fa-map-marker-alt {
+                position: relative;
+                top: 18px;
+                color: $texte;
+            }
+
+            p {
+                color: $texte;
+            }
+        }
+
+        .reservation__menu {
+            width: 75%;
+            margin: auto;
+            margin-top: 20px;
+            text-align: center;
+            word-wrap: break-word;
+
+            p {
+                color: $texte;
+            }
+        }
+
+        button {
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+    }
+
+    #fonctionnement {
+        @include box;
+        width: 480px;
+        background-color: white;
+        margin-bottom: 40px;
+
+        .fonctionnement__button {
+            background: none;
+            background-color: $fond;
+            color: black;
+            font-size: 1em;
+            max-width: none;
+            width: 300px;
+            padding: 25px 20px 25px 0;
+            margin-bottom: 10px;
+        }
+
+        .fonctionnement__button:hover {
+            background-color: #f5edff;
+        }
+
+        i:hover {
+            color: $couleur-primaire;
+        }
+
+        /*Fonctionne uniquement lorsque l'icone est survolée*/
+        span {
+            background-color: $couleur-primaire;
+            color: white;
+            border-radius: 20px;
+            padding: 2px 8px 2px 8px;
             position: relative;
-            top: 18px;
-            color: #353535;
-        }
-        p {
-            color: #353535;
+            right: 35px;
         }
     }
-    .reservation__menu {
-        width: 75%;
-        margin: auto;
-        margin-top: 20px;
-        text-align: center;
-        word-wrap: break-word;
-        p {
-            color: #8d8d8d;
-        } 
-    }
-}
-#fonctionnement {
-    @include box;
-    width: 480px;
-    background-color: white;
-    margin-bottom: 40px;
-    .fonctionnement__button {
-        background: none;
-        background-color: $fond;
-        color: black;
-        font-size: 1em;
-        max-width: none;
-        width: 300px;
-        padding: 25px 20px 25px 0;
-        margin-bottom: 10px;
-    }
-    .fonctionnement__button:hover {
-        background-color: #f5edff;
-    }
-    i:hover {
-        color: $couleur-primaire; 
-    }
-    /*Fonctionne uniquement lorsque l'icone est survolée*/
-    span {
-        background-color: $couleur-primaire;
-        color: white;
-        border-radius: 20px;
-        padding: 2px 8px 2px 8px;
-        position: relative;
-        right: 35px;
-    }
-}
-/*.fonctionnement:hover i {
+
+    /*.fonctionnement:hover i {
     color: $couleur-primaire;
 }
 fonctionne, mais tous les i sont colorés dès que la souris survole le bloc "fonctionnement", même si le bouton n'est pas survolé*/
-#restaurants
- {
-    @include box;
-    margin-top: 20px;
-    width: 950px;
-    margin: auto;
-    border-radius: 15px 15px 0 0;
-    .restaurants__choix {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        height: 750px;
-        padding-bottom: 50px;
-    }
-    article {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+    #restaurants {
+        @include box;
+        margin-top: 20px;
         margin: auto;
-        width: 430px;
-        height: 300px;
-        background-color: white;
-        border-radius: 15px;
-        img {
-            border-radius: 15px 15px 0px 0px;
+        border-radius: 15px 15px 0 0;
+        h2 {
+            margin-bottom: 50px;
+        }
+
+        .restaurants__choix {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-bottom: 50px;
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin: auto;
             width: 430px;
-            height: 220px;
-            object-fit: cover;
-            /*z-index: 1;*/
-        }
-        .new {
-            background-color: #99e2d0;
-            color: #31a488;
-            width: 60px;
-            height: 20px;
-            padding: 5px 8px 5px 8px;
-            font-size: 0.9em;
-            font-weight: bold;
-            position: relative;
-            top: -270px;
-            left: 290px;
-            z-index: 2;
-        }
-        
-        h3 {
-            margin: 10px 0 4px 15px;
-        }
-        p {
-            margin: 0 0 -3px 15px;
-        }
-        .restaurants__pictures {
-            margin: 0;
+            height: 300px;
+            margin-bottom: 50px;
+            background-color: white;
+            border-radius: 15px;
+
+            img {
+                border-radius: 15px 15px 0px 0px;
+                width: 430px;
+                height: 214px;
+                object-fit: cover;
+            }
+
+            .new {
+                background-color: #99e2d0;
+                color: #31a488;
+                width: 60px;
+                height: 20px;
+                padding: 5px 8px 5px 8px;
+                font-size: 0.9em;
+                font-weight: bold;
+                position: relative;
+                top: -265px;
+                left: 290px;
+            }
+
+            h3 {
+                margin: 10px 0 4px 15px;
+            }
+
+            p {
+                margin: 0 0 -3px 15px;
+            }
+
+            .restaurants__pictures {
+                margin: 0;
+            }
         }
     }
 }

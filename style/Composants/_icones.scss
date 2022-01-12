@@ -2,7 +2,7 @@
 @import "../Utils/mixins";
 
 i {
-    color: #8d8d8d;
+    color: $texte;
     padding-right: 20px;
     font-size: 1.2em;
 }
@@ -29,7 +29,8 @@ i {
 .coeur_accueil_plein {
     position: relative;
     top: -30px;
-    left: 325px;color: transparent;
+    left: 325px;
+    color: transparent;
     z-index: 1;
 
     &:hover {
@@ -64,9 +65,10 @@ i {
         -webkit-text-fill-color: transparent;
     }
 }
+/* https://www.djwebcreator.fr/css/des-effets-de-remplissage-en-css/*/
 
 .fa-arrow-left {
-    color: #333333;
+    color: $texte;
     ;
     font-size: 0.8em;
     position: relative;

@@ -4,8 +4,6 @@
 footer {
     background-color: #353535;
     color: white;
-    width: 950px;
-    margin: auto;
     padding: 5px 0 5px 0;
     text-align: center;
     i {
@@ -16,9 +14,8 @@ footer {
     Li {
         list-style-type: none;
         padding-bottom: 10px;
-    }
-    h4 {
-        padding-left: 40px;
+        margin-left: -40px;
+        width: 480px;
     }
     a{
         color: white;

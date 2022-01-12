@@ -7,7 +7,10 @@ button {
     box-shadow: 2px 3px 4px lightgrey;
     color: white;
     padding: 10px 15px 10px 15px;
-    width: 200px;
-    margin: 10px 0 45px 0;
+    width: 200px;   
     align-self: center;
+    &:hover{
+        cursor: pointer;
+        opacity: 85%;
+    }
 }

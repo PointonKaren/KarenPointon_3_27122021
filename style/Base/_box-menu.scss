@@ -1,32 +1,33 @@
 @import "../Utils/variables";
 @import "../Utils/mixins";
-
-#carte {
-    background-color: $fond;
+#body_menu { 
     width: 480px;
     margin: auto;
-    margin-top: -15px;
-    margin-bottom: -50px;
+}
+#carte {
+    background-color: $fond;
+    padding-bottom: 50px;
 
     .menu__pictures {
         text-align: center;
+        position: relative;
+        top: -15px;
     }
 
     img {
-        width: 480px;
+        width: 100%;
         object-fit: cover;
-        height: 320px;
+        height: 330px;
     }
 
     .menu__title {
-        margin: auto;
         display: flex;
         justify-content: space-between;
         padding-top: 15px;
         border-radius: 50px 50px 0px 0px;
         background-color: $fond;
         position: relative;
-        top: -75px;
+        top: -90px;
 
         h1 {
             text-align: center;
@@ -36,10 +37,12 @@
 
     .menu {
         @include box;
-        width: 480px;
         position: relative;
-        top: -75px;
-        margin-top: -20px;
+        top: -90px;
+        margin-bottom: -90px;
+        #menu_bouton_commander {
+            margin-top: 40px;
+        }
     }
 
     .menu__composition {
@@ -50,9 +53,9 @@
         h2 {
             font-weight: lighter;
             text-transform: uppercase;
-            color: #747474;
+            color: $texte;
             border-bottom: 3px $couleur-tertiaire solid;
-            width: 60px;
+            width: 12%;
             margin-left: 20px;
         }
 
@@ -71,16 +74,19 @@
             h3 {
                 margin: 5px 0 5px 0;
             }
-
+            .menu__nom {
+                color: $texte;
+            }
             .menu__prix {
-                color: #333333;
+                color: $texte;
                 font-weight: bold;
                 position: relative;
                 left: 90px;
                 transform: translateX(0px);
+                transition: transform 400ms ease-in;
             }
 
-            .validate {
+            .valider {
                 background-color: $couleur-tertiaire;
                 border-radius: 0 15px 15px 0;
                 height: 80px;
@@ -88,8 +94,8 @@
                 position: relative;
                 top: -45px;
                 left: 25px;
-                opacity: 0;
                 transform: translateX(70px);
+                transition: transform 400ms ease-in;
 
                 .check {
                     width: 0;
@@ -99,6 +105,7 @@
                     left: 20px;
                     color: white;
                     rotate: 90deg;
+                    transition: transform 500ms ease-in;
                 }
             }
 
@@ -106,23 +113,18 @@
                 cursor: pointer;
                 .menu__prix {
                     transform: translateX(-70px);
-                    transition: transform 300ms;
                 }
 
-                .validate {
-                    opacity: 1;
+                .valider {
                     transform: translateX(0);
-                    transition: transform 300ms;
-
                     .check {
                         transform: rotate(270deg);
-                        transition: transform 300ms ease-in;
-                        animation-delay: 100ms;
+                        animation-delay: 100ms; 
                     }
                 }
 
-                .menu__nom {
-
+                .menu__nom,
+                h3 {
                     text-overflow: ellipsis;
                     overflow: hidden;
                 }
@@ -143,10 +145,6 @@
                     width: 280px;
                     white-space: nowrap;
                 }
-            }
-
-            #menu_commander {
-                margin-top: 40px;
             }
         }
     }

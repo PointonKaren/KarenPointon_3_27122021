@@ -1,0 +1,42 @@
+@import "../Utils/variables";
+
+@media screen and (max-width: 768px) {
+
+    #reservation,
+    #fonctionnement,
+    footer {
+        width: 100%;
+        text-align: left;
+    }
+
+    #restaurants {
+        width: 360px;
+        margin-top: 30px;
+        border-radius: 0px;
+
+        .restaurants__choix {
+            height: 1050px;
+
+            article {
+                width: 310px;
+                height: 230px;
+
+                img {
+                    width: 310px;
+                    height: 160px;
+                }
+
+                .new {
+                    position: relative;
+                    top: -210px;
+                    left: 190px;
+                }
+
+                .coeur_accueil {
+                    position: relative;
+                    left: 260px;
+                }
+            }
+        }
+    }
+}
