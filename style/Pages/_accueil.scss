@@ -9,6 +9,7 @@
         h4 {
             font-size: 1.3em;
         }
+
         li {
             margin: auto;
             width: 250px
@@ -49,7 +50,7 @@
         @include box;
         width: 480px;
         background-color: white;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
 
         .fonctionnement__button {
             background: none;
@@ -59,32 +60,64 @@
             max-width: none;
             width: 300px;
             padding: 25px 20px 25px 0;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
 
-        .fonctionnement__button:hover {
-            background-color: #f5edff;
+        i {
+            position: relative;
+            left: -15px;
+            font-size: 1.4em;
+            padding-right: 10px;
         }
 
-        i:hover {
-            color: $couleur-primaire;
+        .fa-list-ul {
+            font-size: 1.1em;
+            margin-left: -15px;
+            padding-right: 5px;
         }
 
-        /*Fonctionne uniquement lorsque l'icone est survolée*/
+        .fa-store {
+            font-size: 1em;
+            margin-left: -15px;
+            padding-right: 8px;
+        }
+
         span {
             background-color: $couleur-primaire;
             color: white;
             border-radius: 20px;
-            padding: 2px 8px 2px 8px;
-            position: relative;
-            right: 35px;
+            padding: 3px 9px 3px 9px;
         }
+
+        .fonctionnement__1 {
+            position: relative;
+            left: -31px;
+        }
+
+        .fonctionnement__2 {
+            position: relative;
+            left: -50px;
+        }
+
+        .fonctionnement__3 {
+            position: relative;
+            left: -45px;
+        }
+
+
+
+        .fonctionnement__button:hover {
+            background-color: #f5edff;
+            opacity: 1;
+
+            i {
+                color: $couleur-primaire;
+            }
+        }
+
+
     }
 
-    /*.fonctionnement:hover i {
-    color: $couleur-primaire;
-}
-fonctionne, mais tous les i sont colorés dès que la souris survole le bloc "fonctionnement", même si le bouton n'est pas survolé*/
     #restaurants {
         @include box;
         margin: auto;
@@ -101,17 +134,18 @@ fonctionne, mais tous les i sont colorés dès que la souris survole le bloc "fo
             padding-bottom: 50px;
 
             article {
-                @include article;                
-                border-radius: 15px;                
+                @include article;
+                border-radius: 15px;
                 margin: auto;
                 margin-bottom: 50px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
-                height: 300px;             
+                height: 300px;
 
                 .restaurants__pictures {
                     margin: 0;
+
                     img {
                         border-radius: 15px 15px 0px 0px;
                         width: 430px;
