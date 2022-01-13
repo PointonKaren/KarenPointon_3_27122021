@@ -1,37 +1,48 @@
 @charset "UTF-8";
-#reservation {
+#body_accueil {
+  width: 1200px;
+  margin: auto;
+  /*.fonctionnement:hover i {
+      color: $couleur-primaire;
+  }
+  fonctionne, mais tous les i sont colorés dès que la souris survole le bloc "fonctionnement", même si le bouton n'est pas survolé*/
+}
+#body_accueil footer h4 {
+  font-size: 1.3em;
+}
+#body_accueil footer li {
+  margin: auto;
+  width: 250px;
+}
+#body_accueil #reservation {
   display: flex;
   flex-direction: column;
   margin: auto;
   background-color: #f6f6f6;
   width: 480px;
 }
-#reservation .reservation__localisation {
+#body_accueil #reservation .reservation__localisation {
   background-color: #eaeaea;
   box-shadow: inset 0 12px 10px -10px #8d8d8d;
   display: flex;
   justify-content: center;
 }
-#reservation .reservation__localisation .fa-map-marker-alt {
+#body_accueil #reservation .reservation__localisation .fa-map-marker-alt {
   position: relative;
   top: 18px;
-  color: #353535;
 }
-#reservation .reservation__localisation p {
-  color: #353535;
-}
-#reservation .reservation__menu {
+#body_accueil #reservation .reservation__menu {
   width: 75%;
   margin: auto;
   margin-top: 20px;
   text-align: center;
   word-wrap: break-word;
 }
-#reservation .reservation__menu p {
-  color: #8d8d8d;
+#body_accueil #reservation button {
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
-
-#fonctionnement {
+#body_accueil #fonctionnement {
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -41,7 +52,7 @@
   margin-bottom: 40px;
   /*Fonctionne uniquement lorsque l'icone est survolée*/
 }
-#fonctionnement .fonctionnement__button {
+#body_accueil #fonctionnement .fonctionnement__button {
   background: none;
   background-color: #f6f6f6;
   color: black;
@@ -51,13 +62,13 @@
   padding: 25px 20px 25px 0;
   margin-bottom: 10px;
 }
-#fonctionnement .fonctionnement__button:hover {
+#body_accueil #fonctionnement .fonctionnement__button:hover {
   background-color: #f5edff;
 }
-#fonctionnement i:hover {
+#body_accueil #fonctionnement i:hover {
   color: #9356DC;
 }
-#fonctionnement span {
+#body_accueil #fonctionnement span {
   background-color: #9356DC;
   color: white;
   border-radius: 20px;
@@ -65,48 +76,46 @@
   position: relative;
   right: 35px;
 }
-
-/*.fonctionnement:hover i {
-    color: $couleur-primaire;
-}
-fonctionne, mais tous les i sont colorés dès que la souris survole le bloc "fonctionnement", même si le bouton n'est pas survolé*/
-#restaurants {
+#body_accueil #restaurants {
   display: flex;
   flex-direction: column;
   margin: auto;
   background-color: #f6f6f6;
-  margin-top: 20px;
-  width: 950px;
   margin: auto;
   border-radius: 15px 15px 0 0;
 }
-#restaurants .restaurants__choix {
+#body_accueil #restaurants h2 {
+  margin-bottom: 50px;
+}
+#body_accueil #restaurants .restaurants__choix {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  height: 750px;
   padding-bottom: 50px;
 }
-#restaurants article {
+#body_accueil #restaurants .restaurants__choix article {
+  box-shadow: 2px 3px 4px lightgrey;
+  background-color: white;
+  width: 430px;
+  border-radius: 15px;
+  margin: auto;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: auto;
-  width: 430px;
   height: 300px;
-  background-color: white;
-  border-radius: 15px;
 }
-#restaurants article img {
+#body_accueil #restaurants .restaurants__choix article .restaurants__pictures {
+  margin: 0;
+}
+#body_accueil #restaurants .restaurants__choix article .restaurants__pictures img {
   border-radius: 15px 15px 0px 0px;
   width: 430px;
-  height: 220px;
+  height: 214px;
   -o-object-fit: cover;
      object-fit: cover;
-  /*z-index: 1;*/
 }
-#restaurants article .new {
+#body_accueil #restaurants .restaurants__choix article .new {
   background-color: #99e2d0;
   color: #31a488;
   width: 60px;
@@ -115,45 +124,47 @@ fonctionne, mais tous les i sont colorés dès que la souris survole le bloc "fo
   font-size: 0.9em;
   font-weight: bold;
   position: relative;
-  top: -270px;
-  left: 310px;
-  z-index: 2;
+  top: -265px;
+  left: 290px;
 }
-#restaurants article h3 {
+#body_accueil #restaurants .restaurants__choix article h3 {
   margin: 10px 0 4px 15px;
 }
-#restaurants article p {
+#body_accueil #restaurants .restaurants__choix article p {
   margin: 0 0 -3px 15px;
 }
-#restaurants article .restaurants__pictures {
-  margin: 0;
+
+#body_menu {
+  width: 480px;
+  margin: auto;
+}
+#body_menu footer li {
+  margin-left: -40px;
 }
 
 #carte {
   background-color: #f6f6f6;
-  width: 480px;
-  margin: auto;
-  margin-top: -15px;
-  margin-bottom: -50px;
+  padding-bottom: 50px;
 }
 #carte .menu__pictures {
   text-align: center;
+  position: relative;
+  top: -15px;
 }
 #carte img {
-  width: 480px;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 320px;
+  height: 330px;
 }
 #carte .menu__title {
-  margin: auto;
   display: flex;
   justify-content: space-between;
   padding-top: 15px;
   border-radius: 50px 50px 0px 0px;
   background-color: #f6f6f6;
   position: relative;
-  top: -75px;
+  top: -90px;
 }
 #carte .menu__title h1 {
   text-align: center;
@@ -164,10 +175,12 @@ fonctionne, mais tous les i sont colorés dès que la souris survole le bloc "fo
   flex-direction: column;
   margin: auto;
   background-color: #f6f6f6;
-  width: 480px;
   position: relative;
-  top: -75px;
-  margin-top: -20px;
+  top: -90px;
+  margin-bottom: -90px;
+}
+#carte .menu #menu_bouton_commander {
+  margin-top: 40px;
 }
 #carte .menu__composition {
   display: flex;
@@ -177,45 +190,85 @@ fonctionne, mais tous les i sont colorés dès que la souris survole le bloc "fo
 #carte .menu__composition h2 {
   font-weight: lighter;
   text-transform: uppercase;
-  color: #747474;
+  color: #343434;
   border-bottom: 3px #99E2D0 solid;
-  width: 60px;
+  width: 12%;
   margin-left: 20px;
 }
 #carte .menu__composition article {
-  border-radius: 20px;
   box-shadow: 2px 3px 4px lightgrey;
+  background-color: white;
+  width: 430px;
+  border-radius: 20px;
   padding: 10px 15px 10px 15px;
   margin: 10px 0 10px 0;
   align-self: center;
-  background-color: white;
-  width: 430px;
   height: 60px;
   text-align: left;
+  overflow: hidden;
 }
 #carte .menu__composition article h3 {
   margin: 5px 0 5px 0;
 }
-#carte .menu__composition .menu__detail {
+#carte .menu__composition article .menu__prix {
+  font-weight: bold;
+  position: relative;
+  left: 90px;
+  transform: translateX(0px);
+  transition: transform 400ms ease-in;
+}
+#carte .menu__composition article .valider {
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  height: 80px;
+  width: 70px;
+  position: relative;
+  top: -45px;
+  left: 25px;
+  transform: translateX(70px);
+  transition: transform 400ms ease-in;
+}
+#carte .menu__composition article .valider .check {
+  width: 0;
+  border-radius: 50px;
+  position: relative;
+  top: 30px;
+  left: 20px;
+  color: white;
+  rotate: 90deg;
+  transition: transform 500ms ease-in;
+}
+#carte .menu__composition article:hover {
+  cursor: pointer;
+}
+#carte .menu__composition article:hover .menu__prix {
+  transform: translateX(-70px);
+}
+#carte .menu__composition article:hover .valider {
+  transform: translateX(0);
+}
+#carte .menu__composition article:hover .valider .check {
+  transform: rotate(270deg);
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+#carte .menu__composition article:hover .menu__nom,
+#carte .menu__composition article:hover h3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#carte .menu__composition article .menu__detail {
   display: flex;
   justify-content: space-between;
+  width: 420px;
 }
-#carte .menu__composition p {
+#carte .menu__composition article .menu__detail p {
   margin: 0 0 -3px 0;
   font-size: 1.2em;
 }
-#carte .menu__composition .menu__nom {
-  text-overflow: ellipsis;
+#carte .menu__composition article .menu__detail .menu__nom {
+  width: 280px;
   white-space: nowrap;
-  overflow: hidden;
-  width: 250px;
-}
-#carte .menu__composition .menu__prix {
-  color: #333333;
-  font-weight: bold;
-}
-#carte #menu_commander {
-  margin-top: 40px;
 }
 
 @font-face {
@@ -249,6 +302,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  color: #343434;
+}
+
 button {
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   border: 0px;
@@ -257,12 +314,15 @@ button {
   color: white;
   padding: 10px 15px 10px 15px;
   width: 200px;
-  margin: 10px 0 45px 0;
   align-self: center;
+}
+button:hover {
+  cursor: pointer;
+  opacity: 85%;
 }
 
 i {
-  color: #8d8d8d;
+  color: #343434;
   padding-right: 20px;
   font-size: 1.2em;
 }
@@ -277,27 +337,56 @@ i {
   width: 5px;
 }
 
-.coeur_accueil {
+.coeur_accueil_vide {
   position: relative;
   top: -30px;
   left: 350px;
 }
-
-/*.coeur_accueil:hover {
-    color: $couleur-primaire;
-    background:linear-gradient(175deg, $couleur-secondaire, $couleur-primaire);
-} 
--> survol
-.coeur_accueil:active {
-    background:linear-gradient(175deg, $couleur-secondaire, $couleur-primaire);
-}
--> clic*/
-.coeur_menu {
-  padding: 20px 50px 0 0;
+.coeur_accueil_vide:hover {
+  color: transparent;
 }
 
+.coeur_accueil_plein {
+  position: relative;
+  top: -30px;
+  left: 325px;
+  color: transparent;
+  z-index: 1;
+}
+.coeur_accueil_plein:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.coeur_menu_vide {
+  position: relative;
+  top: 30px;
+  left: -30px;
+}
+.coeur_menu_vide:hover {
+  color: transparent;
+}
+
+.coeur_menu_plein {
+  position: relative;
+  top: 30px;
+  left: -55px;
+  color: transparent;
+  z-index: 1;
+}
+.coeur_menu_plein:hover {
+  cursor: pointer;
+  background: linear-gradient(360deg, #FF79DA 60%, #9356DC 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* https://www.djwebcreator.fr/css/des-effets-de-remplissage-en-css/*/
 .fa-arrow-left {
-  color: #333333;
+  color: #343434;
   font-size: 0.8em;
   position: relative;
   left: -70px;
@@ -306,8 +395,6 @@ i {
 footer {
   background-color: #353535;
   color: white;
-  width: 950px;
-  margin: auto;
   padding: 5px 0 5px 0;
   text-align: center;
 }
@@ -316,115 +403,207 @@ footer i {
   width: 3px;
   color: white;
 }
+footer h4 {
+  font-size: 1.3em;
+}
 footer Li {
   list-style-type: none;
   padding-bottom: 10px;
-}
-footer h4 {
-  padding-left: 40px;
+  width: 100%;
 }
 footer a {
   color: white;
 }
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
-  #fonctionnement,
-#restaurants,
-footer {
-    width: 80%;
-    max-width: 950px;
-    padding-top: 20px;
+@media screen and (max-width: 992px) {
+  #body_accueil {
+    width: 480px;
+  }
+  #body_accueil footer h4 {
+    font-size: 1.5em;
+  }
+  #body_accueil footer li {
+    margin-left: -40px;
   }
 
-  .fonctionnement__button {
-    margin-bottom: 10px;
+  #fonctionnement .fonctionnement__button {
+    margin-bottom: 40px;
   }
 
-  #restaurants {
-    height: 900px;
-    margin-top: 30px;
+  #restaurants .restaurants__choix {
+    height: 1390px;
+    padding: 0;
   }
-  #restaurants article {
-    /*width: 260px;*/
-    width: 300px;
-    height: 300px;
-    margin-bottom: 20px;
+  #restaurants article h3 {
+    font-size: 1.5em;
   }
-  #restaurants article .restaurants__pictures {
-    margin: auto;
-  }
-  #restaurants article img {
-    width: 100%;
-    max-width: 312px;
-    position: relative;
-    left: 0px;
-  }
-  #restaurants article .new {
-    position: relative;
-    top: -260px;
-    left: 175px;
-  }
-  #restaurants article .coeur_accueil {
-    position: relative;
-    left: 250px;
+  #restaurants article p {
+    font-size: 1.2em;
   }
 }
 @media screen and (max-width: 768px) {
-  #reservation,
-#fonctionnement,
-footer {
-    width: 360px;
-    text-align: left;
+  #body_menu {
+    width: 375px;
   }
 
-  #restaurants {
-    height: auto;
-    width: 360px;
-    margin-top: 30px;
-    border-radius: 0px;
+  header h1 {
+    margin: 0;
   }
-  #restaurants .restaurants__choix {
-    height: 1050px;
-  }
-  #restaurants .restaurants__choix article {
-    width: 310px;
-    height: 230px;
-  }
-  #restaurants .restaurants__choix article img {
-    width: 310px;
-    height: 160px;
-  }
-  #restaurants .restaurants__choix article .new {
+  header .fa-arrow-left {
     position: relative;
-    top: -210px;
-    left: 190px;
-  }
-  #restaurants .restaurants__choix article .coeur_accueil {
-    position: relative;
-    left: 260px;
+    left: -50px;
   }
 
-  #carte {
-    width: 360px;
-  }
   #carte img {
-    width: 360px;
+    height: 280px;
   }
   #carte .menu__title h1 {
-    width: 360px;
-    text-align: left;
-    padding-left: 20px;
+    font-size: 1.8em;
+    font-weight: normal;
+    position: relative;
+    left: -10px;
   }
-  #carte .menu {
-    width: 360px;
+  #carte .menu__title .coeur_menu_vide {
+    position: relative;
+    left: 0;
   }
-  #carte .menu__composition article {
-    width: 310px;
-    font-size: 0.8em;
+  #carte .menu__title .coeur_menu_plein {
+    position: relative;
+    left: -25px;
+  }
+  #carte .menu .menu__composition h2 {
+    font-size: 1.1em;
+  }
+  #carte .menu .menu__composition article {
+    width: 315px;
+    padding: 5px 5px 8px 30px;
+  }
+  #carte .menu .menu__composition article h3,
+#carte .menu .menu__composition article .menu__nom {
+    position: relative;
+    left: -20px;
+    width: 300px;
+  }
+  #carte .menu .menu__composition article p {
+    font-size: 0.9em;
+  }
+  #carte .menu .menu__composition article .menu__prix {
+    position: relative;
+    left: -40px;
+  }
+  #carte .menu .menu__composition article .valider {
+    position: relative;
+    top: -42px;
+    left: -78px;
+    height: 76px;
+    width: 62px;
+    transform: translateX(40px);
+  }
+  #carte .menu .menu__composition article .valider .check {
+    width: 0;
+    border-radius: 50px;
+    position: relative;
+    top: 30px;
+    left: 20px;
+    color: white;
+    rotate: 90deg;
+  }
+  #carte .menu .menu__composition article:hover {
+    cursor: pointer;
+  }
+  #carte .menu .menu__composition article:hover .menu__prix {
+    transform: translateX(-18px);
+  }
+  #carte .menu .menu__composition article:hover .valider {
+    opacity: 1;
+    transform: translateX(-22px);
+  }
+  #carte .menu .menu__composition article:hover .menu__nom,
+#carte .menu .menu__composition article:hover h3 {
+    width: 205px;
+    white-space: nowrap;
   }
 
-  .fa-arrow-left {
+  footer Li,
+footer h4 {
+    margin: 0;
+    text-align: left;
+  }
+  footer h4 {
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 0.9em;
+  }
+  footer Li {
+    font-size: 0.8em;
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #body_accueil {
+    width: 375px;
+  }
+  #body_accueil #reservation {
+    width: 100%;
+    padding: 0;
+    margin-right: 0;
+  }
+  #body_accueil #reservation .reservation__localisation {
+    margin-right: 0;
+  }
+  #body_accueil #fonctionnement,
+#body_accueil #restaurants {
+    width: 100%;
+    margin-right: 0;
+  }
+  #body_accueil #restaurants {
+    border-radius: 0px;
+  }
+  #body_accueil #restaurants h2 {
+    text-align: left;
+    margin: 0;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  #body_accueil #restaurants .restaurants__choix {
+    height: 1080px;
+    padding-bottom: 40px;
+  }
+  #body_accueil #restaurants .restaurants__choix article {
+    width: 335px;
+    height: 250px;
+    margin: 0;
+  }
+  #body_accueil #restaurants .restaurants__choix article .restaurants__pictures img {
+    width: 335px;
+    height: 160px;
+  }
+  #body_accueil #restaurants .restaurants__choix article h3 {
+    font-size: 1.2em;
+  }
+  #body_accueil #restaurants .restaurants__choix article p {
+    font-size: 1.1em;
+  }
+  #body_accueil #restaurants .restaurants__choix article .new {
     position: relative;
-    left: -30px;
+    top: -215px;
+    left: 195px;
+  }
+  #body_accueil #restaurants .restaurants__choix article .coeur_accueil_vide {
+    position: relative;
+    left: 290px;
+  }
+  #body_accueil #restaurants .restaurants__choix article .coeur_accueil_plein {
+    position: relative;
+    left: 265px;
+  }
+  #body_accueil footer {
+    width: 100%;
+    text-align: left;
+  }
+  #body_accueil footer li {
+    width: 335px;
+    padding-left: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

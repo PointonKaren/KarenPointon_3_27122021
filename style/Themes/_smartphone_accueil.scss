@@ -1,0 +1,83 @@
+@import "../Utils/variables";
+
+@media screen and (max-width: 768px) {
+    #body_accueil {
+        width: 375px;
+
+        #reservation {
+            width: 100%;
+            padding: 0;
+            margin-right: 0;
+
+            .reservation__localisation {
+                margin-right: 0;
+            }
+        }
+
+        #fonctionnement,
+        #restaurants {
+            width: 100%;            
+            margin-right: 0;
+        }
+
+        #restaurants {
+            border-radius: 0px;
+
+            h2 {
+                text-align: left;
+                margin: 0;
+                margin-top: 50px;
+                margin-left: 20px;
+                margin-bottom: 20px;
+            }
+
+            .restaurants__choix {
+                height: 1080px;
+                
+            padding-bottom: 40px;
+
+                article {
+                    width: 335px;
+                    height: 250px;
+                    margin: 0;
+
+                    .restaurants__pictures {
+                        img {
+                            width: 335px;
+                            height: 160px;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 1.2em;
+                    }
+
+                    p {
+                        font-size: 1.1em;
+                    }
+                    .new {
+                        position: relative;
+                        top: -215px;
+                        left: 195px;
+                    }
+                    .coeur_accueil_vide {
+                        position: relative;
+                        left: 290px;
+                    }
+                    .coeur_accueil_plein {
+                        position: relative;
+                        left: 265px;
+                    }
+                }
+            }
+        }
+        footer {
+            width: 100%;
+            text-align: left;
+            li {
+                width: 335px;
+                padding-left: 20px;
+            }
+        }
+    }
+}
