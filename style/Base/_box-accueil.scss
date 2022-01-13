@@ -6,8 +6,12 @@
     margin: auto;
 
     footer {
+        h4 {
+            font-size: 1.3em;
+        }
         li {
             margin: auto;
+            width: 250px
         }
     }
 
@@ -24,11 +28,6 @@
             .fa-map-marker-alt {
                 position: relative;
                 top: 18px;
-                color: $texte;
-            }
-
-            p {
-                color: $texte;
             }
         }
 
@@ -38,10 +37,6 @@
             margin-top: 20px;
             text-align: center;
             word-wrap: break-word;
-
-            p {
-                color: $texte;
-            }
         }
 
         button {
@@ -92,9 +87,9 @@
 fonctionne, mais tous les i sont colorés dès que la souris survole le bloc "fonctionnement", même si le bouton n'est pas survolé*/
     #restaurants {
         @include box;
-        margin-top: 20px;
         margin: auto;
         border-radius: 15px 15px 0 0;
+
         h2 {
             margin-bottom: 50px;
         }
@@ -104,49 +99,49 @@ fonctionne, mais tous les i sont colorés dès que la souris survole le bloc "fo
             justify-content: center;
             flex-wrap: wrap;
             padding-bottom: 50px;
-        }
 
-        article {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            margin: auto;
-            width: 430px;
-            height: 300px;
-            margin-bottom: 50px;
-            background-color: white;
-            border-radius: 15px;
+            article {
+                @include article;                
+                border-radius: 15px;                
+                margin: auto;
+                margin-bottom: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 300px;             
 
-            img {
-                border-radius: 15px 15px 0px 0px;
-                width: 430px;
-                height: 214px;
-                object-fit: cover;
-            }
+                .restaurants__pictures {
+                    margin: 0;
+                    img {
+                        border-radius: 15px 15px 0px 0px;
+                        width: 430px;
+                        height: 214px;
+                        object-fit: cover;
+                    }
+                }
 
-            .new {
-                background-color: #99e2d0;
-                color: #31a488;
-                width: 60px;
-                height: 20px;
-                padding: 5px 8px 5px 8px;
-                font-size: 0.9em;
-                font-weight: bold;
-                position: relative;
-                top: -265px;
-                left: 290px;
-            }
+                .new {
+                    background-color: #99e2d0;
+                    color: #31a488;
+                    width: 60px;
+                    height: 20px;
+                    padding: 5px 8px 5px 8px;
+                    font-size: 0.9em;
+                    font-weight: bold;
+                    position: relative;
+                    top: -265px;
+                    left: 290px;
+                }
 
-            h3 {
-                margin: 10px 0 4px 15px;
-            }
+                h3 {
+                    margin: 10px 0 4px 15px;
+                }
 
-            p {
-                margin: 0 0 -3px 15px;
-            }
+                p {
+                    margin: 0 0 -3px 15px;
+                }
 
-            .restaurants__pictures {
-                margin: 0;
+
             }
         }
     }

@@ -7,8 +7,12 @@
   }
   fonctionne, mais tous les i sont colorés dès que la souris survole le bloc "fonctionnement", même si le bouton n'est pas survolé*/
 }
+#body_accueil footer h4 {
+  font-size: 1.3em;
+}
 #body_accueil footer li {
   margin: auto;
+  width: 250px;
 }
 #body_accueil #reservation {
   display: flex;
@@ -26,10 +30,6 @@
 #body_accueil #reservation .reservation__localisation .fa-map-marker-alt {
   position: relative;
   top: 18px;
-  color: #343434;
-}
-#body_accueil #reservation .reservation__localisation p {
-  color: #343434;
 }
 #body_accueil #reservation .reservation__menu {
   width: 75%;
@@ -37,9 +37,6 @@
   margin-top: 20px;
   text-align: center;
   word-wrap: break-word;
-}
-#body_accueil #reservation .reservation__menu p {
-  color: #343434;
 }
 #body_accueil #reservation button {
   margin-top: 20px;
@@ -84,7 +81,6 @@
   flex-direction: column;
   margin: auto;
   background-color: #f6f6f6;
-  margin-top: 20px;
   margin: auto;
   border-radius: 15px 15px 0 0;
 }
@@ -97,25 +93,29 @@
   flex-wrap: wrap;
   padding-bottom: 50px;
 }
-#body_accueil #restaurants article {
+#body_accueil #restaurants .restaurants__choix article {
+  box-shadow: 2px 3px 4px lightgrey;
+  background-color: white;
+  width: 430px;
+  border-radius: 15px;
+  margin: auto;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: auto;
-  width: 430px;
   height: 300px;
-  margin-bottom: 50px;
-  background-color: white;
-  border-radius: 15px;
 }
-#body_accueil #restaurants article img {
+#body_accueil #restaurants .restaurants__choix article .restaurants__pictures {
+  margin: 0;
+}
+#body_accueil #restaurants .restaurants__choix article .restaurants__pictures img {
   border-radius: 15px 15px 0px 0px;
   width: 430px;
   height: 214px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#body_accueil #restaurants article .new {
+#body_accueil #restaurants .restaurants__choix article .new {
   background-color: #99e2d0;
   color: #31a488;
   width: 60px;
@@ -127,19 +127,19 @@
   top: -265px;
   left: 290px;
 }
-#body_accueil #restaurants article h3 {
+#body_accueil #restaurants .restaurants__choix article h3 {
   margin: 10px 0 4px 15px;
 }
-#body_accueil #restaurants article p {
+#body_accueil #restaurants .restaurants__choix article p {
   margin: 0 0 -3px 15px;
-}
-#body_accueil #restaurants article .restaurants__pictures {
-  margin: 0;
 }
 
 #body_menu {
   width: 480px;
   margin: auto;
+}
+#body_menu footer li {
+  margin-left: -40px;
 }
 
 #carte {
@@ -196,13 +196,13 @@
   margin-left: 20px;
 }
 #carte .menu__composition article {
-  border-radius: 20px;
   box-shadow: 2px 3px 4px lightgrey;
+  background-color: white;
+  width: 430px;
+  border-radius: 20px;
   padding: 10px 15px 10px 15px;
   margin: 10px 0 10px 0;
   align-self: center;
-  background-color: white;
-  width: 430px;
   height: 60px;
   text-align: left;
   overflow: hidden;
@@ -210,11 +210,7 @@
 #carte .menu__composition article h3 {
   margin: 5px 0 5px 0;
 }
-#carte .menu__composition article .menu__nom {
-  color: #343434;
-}
 #carte .menu__composition article .menu__prix {
-  color: #343434;
   font-weight: bold;
   position: relative;
   left: 90px;
@@ -304,6 +300,10 @@ h2 {
 a {
   color: black;
   text-decoration: none;
+}
+
+p {
+  color: #343434;
 }
 
 button {
@@ -403,11 +403,13 @@ footer i {
   width: 3px;
   color: white;
 }
+footer h4 {
+  font-size: 1.3em;
+}
 footer Li {
   list-style-type: none;
   padding-bottom: 10px;
-  margin-left: -40px;
-  width: 480px;
+  width: 100%;
 }
 footer a {
   color: white;
@@ -525,6 +527,7 @@ footer a {
   footer Li,
 footer h4 {
     margin: 0;
+    text-align: left;
   }
   footer h4 {
     margin-left: 20px;
@@ -532,41 +535,75 @@ footer h4 {
     font-size: 0.9em;
   }
   footer Li {
-    margin-left: -20px;
     font-size: 0.8em;
+    padding-left: 20px;
   }
 }
 @media screen and (max-width: 768px) {
-  #reservation,
-#fonctionnement,
-footer {
+  #body_accueil {
+    width: 375px;
+  }
+  #body_accueil #reservation {
+    width: 100%;
+    padding: 0;
+    margin-right: 0;
+  }
+  #body_accueil #reservation .reservation__localisation {
+    margin-right: 0;
+  }
+  #body_accueil #fonctionnement,
+#body_accueil #restaurants {
+    width: 100%;
+    margin-right: 0;
+  }
+  #body_accueil #restaurants {
+    border-radius: 0px;
+  }
+  #body_accueil #restaurants h2 {
+    text-align: left;
+    margin: 0;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  #body_accueil #restaurants .restaurants__choix {
+    height: 1080px;
+    padding-bottom: 40px;
+  }
+  #body_accueil #restaurants .restaurants__choix article {
+    width: 335px;
+    height: 250px;
+    margin: 0;
+  }
+  #body_accueil #restaurants .restaurants__choix article .restaurants__pictures img {
+    width: 335px;
+    height: 160px;
+  }
+  #body_accueil #restaurants .restaurants__choix article h3 {
+    font-size: 1.2em;
+  }
+  #body_accueil #restaurants .restaurants__choix article p {
+    font-size: 1.1em;
+  }
+  #body_accueil #restaurants .restaurants__choix article .new {
+    position: relative;
+    top: -215px;
+    left: 195px;
+  }
+  #body_accueil #restaurants .restaurants__choix article .coeur_accueil_vide {
+    position: relative;
+    left: 290px;
+  }
+  #body_accueil #restaurants .restaurants__choix article .coeur_accueil_plein {
+    position: relative;
+    left: 265px;
+  }
+  #body_accueil footer {
     width: 100%;
     text-align: left;
   }
-
-  #restaurants {
-    width: 360px;
-    margin-top: 30px;
-    border-radius: 0px;
-  }
-  #restaurants .restaurants__choix {
-    height: 1050px;
-  }
-  #restaurants .restaurants__choix article {
-    width: 310px;
-    height: 230px;
-  }
-  #restaurants .restaurants__choix article img {
-    width: 310px;
-    height: 160px;
-  }
-  #restaurants .restaurants__choix article .new {
-    position: relative;
-    top: -210px;
-    left: 190px;
-  }
-  #restaurants .restaurants__choix article .coeur_accueil {
-    position: relative;
-    left: 260px;
+  #body_accueil footer li {
+    width: 335px;
+    padding-left: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

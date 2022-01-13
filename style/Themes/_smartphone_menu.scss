@@ -113,6 +113,7 @@
         Li,
         h4 {
             margin: 0;
+            text-align: left;
         }
 
         h4 {
@@ -122,8 +123,8 @@
         }
 
         Li {
-            margin-left: -20px;
             font-size: 0.8em;
+            padding-left: 20px;
         }
     }
 }
