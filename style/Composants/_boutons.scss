@@ -1,16 +1,19 @@
 @import "../Utils/variables";
 @import "../Utils/mixins";
+
 button {
-    background:linear-gradient(175deg, $couleur-secondaire, $couleur-primaire);
+    background: linear-gradient(175deg, $couleur-secondaire, $couleur-primaire);
     border: 0px;
     border-radius: 20px;
     box-shadow: 2px 3px 4px lightgrey;
     color: white;
     padding: 10px 15px 10px 15px;
-    width: 200px;   
+    width: 200px;
     align-self: center;
-    &:hover{
+
+    &:hover {
         cursor: pointer;
         opacity: 85%;
+        box-shadow: 2px 3px 8px grey;
     }
 }

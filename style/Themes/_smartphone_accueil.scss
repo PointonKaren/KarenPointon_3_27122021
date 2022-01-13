@@ -4,20 +4,10 @@
     #body_accueil {
         width: 375px;
 
-        #reservation {
-            width: 100%;
-            padding: 0;
-            margin-right: 0;
-
-            .reservation__localisation {
-                margin-right: 0;
-            }
-        }
-
+        #reservation,
         #fonctionnement,
         #restaurants {
-            width: 100%;            
-            margin-right: 0;
+            width: 100%;
         }
 
         #restaurants {
@@ -33,12 +23,11 @@
 
             .restaurants__choix {
                 height: 1080px;
-                
-            padding-bottom: 40px;
+                padding-bottom: 40px;
 
                 article {
                     width: 335px;
-                    height: 250px;
+                    height: 230px;
                     margin: 0;
 
                     .restaurants__pictures {
@@ -55,15 +44,18 @@
                     p {
                         font-size: 1.1em;
                     }
+
                     .new {
                         position: relative;
                         top: -215px;
                         left: 195px;
                     }
+
                     .coeur_accueil_vide {
                         position: relative;
                         left: 290px;
                     }
+
                     .coeur_accueil_plein {
                         position: relative;
                         left: 265px;
@@ -71,9 +63,11 @@
                 }
             }
         }
+
         footer {
             width: 100%;
             text-align: left;
+
             li {
                 width: 335px;
                 padding-left: 20px;

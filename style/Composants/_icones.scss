@@ -2,14 +2,9 @@
 @import "../Utils/mixins";
 
 i {
-    color: $texte;
+    color: #7e7e7e;
     padding-right: 20px;
     font-size: 1.2em;
-}
-
-.icone_telephone {
-    position: relative;
-    left: 5px;
 }
 
 .fa-heart {

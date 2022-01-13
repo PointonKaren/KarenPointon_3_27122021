@@ -49,8 +49,9 @@
                 article {
                     width: 315px;
                     padding: 5px 5px 8px 30px;
+
                     h3,
-                    .menu__nom {
+                    .menu__description {
                         position: relative;
                         left: -20px;
                         width: 300px;
@@ -96,10 +97,36 @@
                             transform: translateX(-22px);
                         }
 
-                        .menu__nom,
+                        .menu__description,
                         h3 {
                             width: 205px;
                             white-space: nowrap;
+                        }
+                    }
+                }
+
+                .menu__nom--long {
+                    height: 80px;
+                    .valider {
+                        height: 95px;
+                        position: relative;
+                        top: -65px;
+                        .check{
+                            position: relative;
+                            top: 40px;
+                        }
+                    }
+                    
+                    &:hover {
+                        .valider {
+                            position: relative;
+                            top: -40px;
+                        }
+                        
+                        .menu__description,
+                        .menu__prix {
+                            position: relative;
+                            top: 25px;
                         }
                     }
                 }

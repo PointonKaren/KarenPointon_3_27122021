@@ -1,11 +1,6 @@
-@charset "UTF-8";
 #body_accueil {
   width: 1200px;
   margin: auto;
-  /*.fonctionnement:hover i {
-      color: $couleur-primaire;
-  }
-  fonctionne, mais tous les i sont colorés dès que la souris survole le bloc "fonctionnement", même si le bouton n'est pas survolé*/
 }
 #body_accueil footer h4 {
   font-size: 1.3em;
@@ -49,8 +44,7 @@
   background-color: #f6f6f6;
   width: 480px;
   background-color: white;
-  margin-bottom: 40px;
-  /*Fonctionne uniquement lorsque l'icone est survolée*/
+  margin-bottom: 50px;
 }
 #body_accueil #fonctionnement .fonctionnement__button {
   background: none;
@@ -60,21 +54,48 @@
   max-width: none;
   width: 300px;
   padding: 25px 20px 25px 0;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
-#body_accueil #fonctionnement .fonctionnement__button:hover {
-  background-color: #f5edff;
+#body_accueil #fonctionnement i {
+  position: relative;
+  left: -15px;
+  font-size: 1.4em;
+  padding-right: 10px;
 }
-#body_accueil #fonctionnement i:hover {
-  color: #9356DC;
+#body_accueil #fonctionnement .fa-list-ul {
+  font-size: 1.1em;
+  margin-left: -15px;
+  padding-right: 5px;
+}
+#body_accueil #fonctionnement .fa-store {
+  font-size: 1em;
+  margin-left: -15px;
+  padding-right: 8px;
 }
 #body_accueil #fonctionnement span {
   background-color: #9356DC;
   color: white;
   border-radius: 20px;
-  padding: 2px 8px 2px 8px;
+  padding: 3px 9px 3px 9px;
+}
+#body_accueil #fonctionnement .fonctionnement__1 {
   position: relative;
-  right: 35px;
+  left: -31px;
+}
+#body_accueil #fonctionnement .fonctionnement__2 {
+  position: relative;
+  left: -50px;
+}
+#body_accueil #fonctionnement .fonctionnement__3 {
+  position: relative;
+  left: -45px;
+}
+#body_accueil #fonctionnement .fonctionnement__button:hover {
+  background-color: #f5edff;
+  opacity: 1;
+}
+#body_accueil #fonctionnement .fonctionnement__button:hover i {
+  color: #9356DC;
 }
 #body_accueil #restaurants {
   display: flex;
@@ -252,7 +273,7 @@
   -webkit-animation-delay: 100ms;
           animation-delay: 100ms;
 }
-#carte .menu__composition article:hover .menu__nom,
+#carte .menu__composition article:hover .menu__description,
 #carte .menu__composition article:hover h3 {
   text-overflow: ellipsis;
   overflow: hidden;
@@ -266,7 +287,7 @@
   margin: 0 0 -3px 0;
   font-size: 1.2em;
 }
-#carte .menu__composition article .menu__detail .menu__nom {
+#carte .menu__composition article .menu__detail .menu__description {
   width: 280px;
   white-space: nowrap;
 }
@@ -319,17 +340,13 @@ button {
 button:hover {
   cursor: pointer;
   opacity: 85%;
+  box-shadow: 2px 3px 8px grey;
 }
 
 i {
-  color: #343434;
+  color: #7e7e7e;
   padding-right: 20px;
   font-size: 1.2em;
-}
-
-.icone_telephone {
-  position: relative;
-  left: 5px;
 }
 
 .fa-heart {
@@ -479,7 +496,7 @@ footer a {
     padding: 5px 5px 8px 30px;
   }
   #carte .menu .menu__composition article h3,
-#carte .menu .menu__composition article .menu__nom {
+#carte .menu .menu__composition article .menu__description {
     position: relative;
     left: -20px;
     width: 300px;
@@ -518,10 +535,31 @@ footer a {
     opacity: 1;
     transform: translateX(-22px);
   }
-  #carte .menu .menu__composition article:hover .menu__nom,
+  #carte .menu .menu__composition article:hover .menu__description,
 #carte .menu .menu__composition article:hover h3 {
     width: 205px;
     white-space: nowrap;
+  }
+  #carte .menu .menu__composition .menu__nom--long {
+    height: 80px;
+  }
+  #carte .menu .menu__composition .menu__nom--long .valider {
+    height: 95px;
+    position: relative;
+    top: -65px;
+  }
+  #carte .menu .menu__composition .menu__nom--long .valider .check {
+    position: relative;
+    top: 40px;
+  }
+  #carte .menu .menu__composition .menu__nom--long:hover .valider {
+    position: relative;
+    top: -40px;
+  }
+  #carte .menu .menu__composition .menu__nom--long:hover .menu__description,
+#carte .menu .menu__composition .menu__nom--long:hover .menu__prix {
+    position: relative;
+    top: 25px;
   }
 
   footer Li,
@@ -543,18 +581,10 @@ footer h4 {
   #body_accueil {
     width: 375px;
   }
-  #body_accueil #reservation {
-    width: 100%;
-    padding: 0;
-    margin-right: 0;
-  }
-  #body_accueil #reservation .reservation__localisation {
-    margin-right: 0;
-  }
-  #body_accueil #fonctionnement,
+  #body_accueil #reservation,
+#body_accueil #fonctionnement,
 #body_accueil #restaurants {
     width: 100%;
-    margin-right: 0;
   }
   #body_accueil #restaurants {
     border-radius: 0px;
@@ -572,7 +602,7 @@ footer h4 {
   }
   #body_accueil #restaurants .restaurants__choix article {
     width: 335px;
-    height: 250px;
+    height: 230px;
     margin: 0;
   }
   #body_accueil #restaurants .restaurants__choix article .restaurants__pictures img {
