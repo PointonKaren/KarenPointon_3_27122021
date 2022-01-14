@@ -489,7 +489,7 @@ footer a {
   }
   #carte .menu__title .coeur_menu_plein {
     position: relative;
-    left: -25px;
+    left: 0;
   }
   #carte .menu .menu__composition h2 {
     font-size: 1.1em;
@@ -620,8 +620,8 @@ footer h4 {
   }
   #body_accueil #restaurants .restaurants__choix article .new {
     position: relative;
-    top: -215px;
-    left: 195px;
+    top: -235px;
+    left: 245px;
   }
   #body_accueil #restaurants .restaurants__choix article .coeur_accueil_vide {
     position: relative;
@@ -629,7 +629,7 @@ footer h4 {
   }
   #body_accueil #restaurants .restaurants__choix article .coeur_accueil_plein {
     position: relative;
-    left: 265px;
+    left: 260px;
   }
   #body_accueil footer {
     width: 100%;
