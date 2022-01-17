@@ -1,26 +1,21 @@
 @import "../Utils/variables";
-
 @media screen and (max-width: 768px) {
     #body_menu {
         width: 375px;
     }
-
     header {
         h1 {
             margin: 0;
         }
-
         .fa-arrow-left {
             position: relative;
             left: -50px;
         }
     }
-
     #carte {
         img {
             height: 280px;
         }
-
         .menu__title {
             h1 {
                 font-size: 1.8em;
@@ -28,44 +23,37 @@
                 position: relative;
                 left: -10px;
             }
-
             .coeur_menu_vide {
                 position: relative;
                 left: 0;
             }
-
             .coeur_menu_plein {
                 position: relative;
                 left: 0;
             }
         }
-
         .menu {
             .menu__composition {
+                flex-direction: column;
                 h2 {
                     font-size: 1.1em;
                 }
-
                 article {
                     width: 315px;
                     padding: 5px 5px 8px 30px;
-
                     h3,
                     .menu__description {
                         position: relative;
                         left: -20px;
                         width: 300px;
                     }
-
                     p {
                         font-size: 0.9em;
                     }
-
                     .menu__prix {
                         position: relative;
                         left: -40px;
                     }
-
                     .valider {
                         position: relative;
                         top: -42px;
@@ -73,30 +61,21 @@
                         height: 76px;
                         width: 62px;
                         transform: translateX(40px);
-
                         .check {
-                            width: 0;
-                            border-radius: 50px;
                             position: relative;
                             top: 30px;
                             left: 20px;
-                            color: white;
-                            rotate: 90deg;
                         }
                     }
-
                     &:hover {
                         cursor: pointer;
-
                         .menu__prix {
                             transform: translateX(-18px);
                         }
-
                         .valider {
                             opacity: 1;
                             transform: translateX(-22px);
                         }
-
                         .menu__description,
                         h3 {
                             width: 205px;
@@ -104,25 +83,22 @@
                         }
                     }
                 }
-
                 .menu__nom--long {
                     height: 80px;
                     .valider {
                         height: 95px;
                         position: relative;
                         top: -65px;
-                        .check{
+                        .check {
                             position: relative;
                             top: 40px;
                         }
                     }
-                    
                     &:hover {
                         .valider {
                             position: relative;
                             top: -40px;
                         }
-                        
                         .menu__description,
                         .menu__prix {
                             position: relative;
@@ -131,27 +107,15 @@
                     }
                 }
             }
-
         }
     }
-
     footer {
-
-        Li,
         h4 {
-            margin: 0;
-            text-align: left;
+            font-size: 1.1em;
+            margin-bottom: 0;
         }
-
-        h4 {
-            margin-left: 20px;
-            margin-top: 15px;
-            font-size: 0.9em;
-        }
-
         Li {
-            font-size: 0.8em;
-            padding-left: 20px;
+            font-size: 0.9em;
         }
     }
 }

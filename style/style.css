@@ -6,7 +6,6 @@
   font-size: 1.3em;
 }
 #body_accueil footer li {
-  margin: auto;
   width: 250px;
 }
 #body_accueil #reservation {
@@ -156,7 +155,7 @@
 }
 
 #body_menu {
-  width: 480px;
+  width: 1200px;
   margin: auto;
 }
 #body_menu footer li {
@@ -175,13 +174,13 @@
 #carte img {
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 330px;
 }
 #carte .menu__title {
   display: flex;
   justify-content: space-between;
-  padding-top: 15px;
+  padding-top: 20px;
   border-radius: 50px 50px 0px 0px;
   background-color: #f6f6f6;
   position: relative;
@@ -189,13 +188,16 @@
 }
 #carte .menu__title h1 {
   text-align: center;
-  width: 480px;
+  font-size: 2em;
+  margin: auto;
+  margin-bottom: 20px;
 }
 #carte .menu {
   display: flex;
   flex-direction: column;
   margin: auto;
   background-color: #f6f6f6;
+  flex-direction: column;
   position: relative;
   top: -90px;
   margin-bottom: -90px;
@@ -204,9 +206,7 @@
   margin-top: 40px;
 }
 #carte .menu__composition {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  width: 100%;
 }
 #carte .menu__composition h2 {
   font-weight: lighter;
@@ -214,7 +214,9 @@
   color: #343434;
   border-bottom: 3px #99E2D0 solid;
   width: 12%;
-  margin-left: 20px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 #carte .menu__composition article {
   box-shadow: 2px 3px 4px lightgrey;
@@ -222,10 +224,10 @@
   width: 430px;
   border-radius: 20px;
   padding: 10px 15px 10px 15px;
-  margin: 10px 0 10px 0;
-  align-self: center;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
   height: 60px;
-  text-align: left;
   overflow: hidden;
 }
 #carte .menu__composition article h3 {
@@ -245,7 +247,7 @@
   width: 70px;
   position: relative;
   top: -45px;
-  left: 25px;
+  left: 26px;
   transform: translateX(70px);
   transition: transform 400ms ease-in;
 }
@@ -256,7 +258,6 @@
   top: 30px;
   left: 20px;
   color: white;
-  rotate: 90deg;
   transition: transform 500ms ease-in;
 }
 #carte .menu__composition article:hover {
@@ -269,9 +270,9 @@
   transform: translateX(0);
 }
 #carte .menu__composition article:hover .valider .check {
-  transform: rotate(270deg);
+  transform: rotate(360deg);
   -webkit-animation-delay: 100ms;
-          animation-delay: 100ms;
+  animation-delay: 100ms;
 }
 #carte .menu__composition article:hover .menu__description,
 #carte .menu__composition article:hover h3 {
@@ -416,7 +417,8 @@ footer {
   background-color: #353535;
   color: white;
   padding: 5px 0 5px 0;
-  text-align: center;
+  text-align: left;
+  width: 100%;
 }
 footer i {
   font-size: 0.8em;
@@ -425,10 +427,13 @@ footer i {
 }
 footer h4 {
   font-size: 1.3em;
+  margin-left: 20px;
+  margin-top: 15px;
 }
 footer Li {
   list-style-type: none;
   padding-bottom: 10px;
+  padding-left: 20px;
   width: 100%;
 }
 footer a {
@@ -461,6 +466,25 @@ footer a {
     font-size: 1.2em;
   }
 }
+@media screen and (max-width: 992px) {
+  #body_menu {
+    width: 480px;
+    border: springgreen 1px solid;
+  }
+
+  #carte .menu__title .coeur_menu_vide {
+    font-size: 1.5em;
+    position: relative;
+    left: -20px;
+    top: 5px;
+  }
+  #carte .menu__title .coeur_menu_plein {
+    font-size: 1.5em;
+    position: relative;
+    left: -49px;
+    top: 6px;
+  }
+}
 @media screen and (max-width: 768px) {
   #body_menu {
     width: 375px;
@@ -491,6 +515,9 @@ footer a {
     position: relative;
     left: 0;
   }
+  #carte .menu .menu__composition {
+    flex-direction: column;
+  }
   #carte .menu .menu__composition h2 {
     font-size: 1.1em;
   }
@@ -520,13 +547,9 @@ footer a {
     transform: translateX(40px);
   }
   #carte .menu .menu__composition article .valider .check {
-    width: 0;
-    border-radius: 50px;
     position: relative;
     top: 30px;
     left: 20px;
-    color: white;
-    rotate: 90deg;
   }
   #carte .menu .menu__composition article:hover {
     cursor: pointer;
@@ -565,19 +588,12 @@ footer a {
     top: 25px;
   }
 
-  footer Li,
-footer h4 {
-    margin: 0;
-    text-align: left;
-  }
   footer h4 {
-    margin-left: 20px;
-    margin-top: 15px;
-    font-size: 0.9em;
+    font-size: 1.1em;
+    margin-bottom: 0;
   }
   footer Li {
-    font-size: 0.8em;
-    padding-left: 20px;
+    font-size: 0.9em;
   }
 }
 @media screen and (max-width: 768px) {
@@ -631,12 +647,11 @@ footer h4 {
     position: relative;
     left: 260px;
   }
-  #body_accueil footer {
-    width: 100%;
-    text-align: left;
+  #body_accueil footer h4 {
+    font-size: 1.1em;
+    margin-bottom: 0;
   }
-  #body_accueil footer li {
-    width: 335px;
-    padding-left: 20px;
+  #body_accueil footer Li {
+    font-size: 0.9em;
   }
 }/*# sourceMappingURL=style.css.map */

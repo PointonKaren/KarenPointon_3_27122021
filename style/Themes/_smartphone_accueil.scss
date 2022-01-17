@@ -1,18 +1,14 @@
 @import "../Utils/variables";
-
 @media screen and (max-width: 768px) {
     #body_accueil {
         width: 375px;
-
         #reservation,
         #fonctionnement,
         #restaurants {
             width: 100%;
         }
-
         #restaurants {
             border-radius: 0px;
-
             h2 {
                 text-align: left;
                 margin: 0;
@@ -20,42 +16,34 @@
                 margin-left: 20px;
                 margin-bottom: 20px;
             }
-
             .restaurants__choix {
                 height: 1080px;
                 padding-bottom: 40px;
-
                 article {
                     width: 335px;
                     height: 230px;
                     margin: 0;
-
                     .restaurants__pictures {
                         img {
                             width: 335px;
                             height: 160px;
                         }
                     }
-
                     h3 {
                         font-size: 1.2em;
                     }
-
                     p {
                         font-size: 1.1em;
                     }
-
                     .new {
                         position: relative;
                         top: -235px;
                         left: 245px;
                     }
-
                     .coeur_accueil_vide {
                         position: relative;
                         left: 290px;
                     }
-
                     .coeur_accueil_plein {
                         position: relative;
                         left: 260px;
@@ -63,14 +51,14 @@
                 }
             }
         }
-
         footer {
-            width: 100%;
-            text-align: left;
 
-            li {
-                width: 335px;
-                padding-left: 20px;
+            h4 {
+                font-size: 1.1em;
+                margin-bottom: 0;
+            }
+            Li {
+                font-size: 0.9em;
             }
         }
     }
