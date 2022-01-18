@@ -1,6 +1,97 @@
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spinreverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes spinreverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes bg_fading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes bg_fading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 #body_accueil {
   width: 1200px;
   margin: auto;
+}
+#body_accueil #bg__loading_spinner {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  width: 1200px;
+  height: 1904px;
+  z-index: 2;
+  -webkit-animation: bg_fading 0.9s forwards 3s;
+  animation: bg_fading 0.9s forwards 3s;
+}
+#body_accueil #bg__loading_spinner .loader {
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  position: relative;
+  top: 30%;
+  left: 45%;
+}
+#body_accueil #bg__loading_spinner .loader-quart {
+  border-radius: 50px;
+  border: 6px solid transparent;
+  border-top-color: #9356DC;
+  border-bottom-color: #9356DC;
+  -webkit-animation: spin 2s linear 0s 3;
+  animation: spin 2s linear 0s 3;
+}
+#body_accueil #bg__loading_spinner .loader-quart:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  margin: auto;
+  border-radius: 50px;
+  border: 6px solid transparent;
+  border-top-color: #FF79DA;
+  border-bottom-color: #FF79DA;
+  -webkit-animation: spinreverse 1s linear 0s 6;
+  animation: spinreverse 1s linear 0s 6;
 }
 #body_accueil footer h4 {
   font-size: 1.3em;
@@ -120,8 +211,6 @@
   border-radius: 15px;
   margin: auto;
   margin-bottom: 50px;
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
   height: 300px;
 }
@@ -133,7 +222,7 @@
   width: 430px;
   height: 214px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #body_accueil #restaurants .restaurants__choix article .new {
   background-color: #99e2d0;
@@ -154,6 +243,56 @@
   margin: 0 0 -3px 15px;
 }
 
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spinreverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes spinreverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes bg_fading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes bg_fading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 #body_menu {
   width: 1200px;
   margin: auto;
@@ -213,12 +352,13 @@
   text-transform: uppercase;
   color: #343434;
   border-bottom: 3px #99E2D0 solid;
-  width: 12%;
+  width: 150px;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 #carte .menu__composition article {
+  cursor: pointer;
   box-shadow: 2px 3px 4px lightgrey;
   background-color: white;
   width: 430px;
@@ -260,9 +400,6 @@
   color: white;
   transition: transform 500ms ease-in;
 }
-#carte .menu__composition article:hover {
-  cursor: pointer;
-}
 #carte .menu__composition article:hover .menu__prix {
   transform: translateX(-70px);
 }
@@ -293,6 +430,56 @@
   white-space: nowrap;
 }
 
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spinreverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes spinreverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes bg_fading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes bg_fading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 @font-face {
   font-family: "shrikhand";
   src: url("Base/fonts/Shrikhand-Regular.ttf") format("truetype");
@@ -328,6 +515,56 @@ p {
   color: #343434;
 }
 
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spinreverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes spinreverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes bg_fading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes bg_fading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 button {
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   border: 0px;
@@ -344,6 +581,56 @@ button:hover {
   box-shadow: 2px 3px 8px grey;
 }
 
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spinreverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes spinreverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes bg_fading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes bg_fading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 i {
   color: #7e7e7e;
   padding-right: 20px;
@@ -398,10 +685,10 @@ i {
   transform: scale(0);
   transition: transform 400ms ease-in;
 }
-.coeur_menu:hover > .coeur_menu_plein {
+.coeur_menu:active > .coeur_menu_plein {
   transform: scale(1);
 }
-.coeur_menu:hover > .coeur_menu_vide {
+.coeur_menu:active > .coeur_menu_vide {
   opacity: 0;
   transition: opacity 3000ms;
 }
@@ -413,6 +700,56 @@ i {
   left: -70px;
 }
 
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spinreverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes spinreverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes bg_fading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes bg_fading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 footer {
   background-color: #353535;
   color: white;
@@ -440,9 +777,68 @@ footer a {
   color: white;
 }
 
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spinreverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes spinreverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes bg_fading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes bg_fading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 @media screen and (max-width: 992px) {
   #body_accueil {
-    width: 480px;
+    width: 770px;
+  }
+  #body_accueil #bg__loading_spinner {
+    width: 770px;
+    height: 2615px;
+  }
+  #body_accueil #bg__loading_spinner .loader {
+    position: relative;
+    top: 22%;
+    left: 42%;
   }
   #body_accueil footer h4 {
     font-size: 1.5em;
@@ -455,21 +851,66 @@ footer a {
     margin-bottom: 40px;
   }
 
-  #restaurants .restaurants__choix {
-    height: 1390px;
-    padding: 0;
-  }
-  #restaurants article h3 {
+  #restaurants .restaurants__choix article h3 {
     font-size: 1.5em;
   }
-  #restaurants article p {
+  #restaurants .restaurants__choix article p {
     font-size: 1.2em;
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spinreverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes spinreverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes bg_fading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes bg_fading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
   }
 }
 @media screen and (max-width: 992px) {
   #body_menu {
-    width: 480px;
-    border: springgreen 1px solid;
+    width: 770px;
   }
 
   #carte .menu__title .coeur_menu_vide {
@@ -483,6 +924,56 @@ footer a {
     position: relative;
     left: -49px;
     top: 6px;
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spinreverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes spinreverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes bg_fading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes bg_fading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
   }
 }
 @media screen and (max-width: 768px) {
@@ -500,12 +991,18 @@ footer a {
 
   #carte img {
     height: 280px;
+    margin-top: 5px;
+  }
+  #carte .menu__title {
+    padding-top: 35px;
   }
   #carte .menu__title h1 {
     font-size: 1.8em;
     font-weight: normal;
+    margin-left: 0;
     position: relative;
-    left: -10px;
+    left: 20px;
+    padding-bottom: 10px;
   }
   #carte .menu__title .coeur_menu_vide {
     position: relative;
@@ -513,13 +1010,20 @@ footer a {
   }
   #carte .menu__title .coeur_menu_plein {
     position: relative;
-    left: 0;
+    left: -29px;
+  }
+  #carte .menu #menu_bouton_commander {
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
   #carte .menu .menu__composition {
     flex-direction: column;
   }
   #carte .menu .menu__composition h2 {
     font-size: 1.1em;
+    width: 12%;
+    margin: 0;
+    margin-left: 20px;
   }
   #carte .menu .menu__composition article {
     width: 315px;
@@ -551,14 +1055,10 @@ footer a {
     top: 30px;
     left: 20px;
   }
-  #carte .menu .menu__composition article:hover {
-    cursor: pointer;
-  }
   #carte .menu .menu__composition article:hover .menu__prix {
     transform: translateX(-18px);
   }
   #carte .menu .menu__composition article:hover .valider {
-    opacity: 1;
     transform: translateX(-22px);
   }
   #carte .menu .menu__composition article:hover .menu__description,
@@ -596,14 +1096,104 @@ footer a {
     font-size: 0.9em;
   }
 }
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spinreverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes spinreverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes bg_fading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes bg_fading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 @media screen and (max-width: 768px) {
+  header h1 {
+    margin: 10px 0;
+  }
+
   #body_accueil {
     width: 375px;
+  }
+  #body_accueil #bg__loading_spinner {
+    width: 375px;
+    height: 2208px;
+  }
+  #body_accueil #bg__loading_spinner .loader {
+    position: relative;
+    top: 24%;
+    left: 35%;
+  }
+  #body_accueil footer h4 {
+    font-size: 1.5em;
+  }
+  #body_accueil footer li {
+    margin-left: -40px;
   }
   #body_accueil #reservation,
 #body_accueil #fonctionnement,
 #body_accueil #restaurants {
     width: 100%;
+  }
+  #body_accueil #fonctionnement h2 {
+    text-align: left;
+    margin-left: 20px;
+  }
+  #body_accueil #fonctionnement .fonctionnement__button {
+    width: 320px;
+    padding: 25px 20px 25px 0;
+    margin-bottom: 20px;
+  }
+  #body_accueil #fonctionnement .fonctionnement__button .fonctionnement__1 {
+    position: relative;
+    left: -45px;
+  }
+  #body_accueil #fonctionnement .fonctionnement__button .fonctionnement__2 {
+    position: relative;
+    left: -63px;
+  }
+  #body_accueil #fonctionnement .fonctionnement__button .fonctionnement__3 {
+    position: relative;
+    left: -55px;
   }
   #body_accueil #restaurants {
     border-radius: 0px;
@@ -621,7 +1211,7 @@ footer a {
   }
   #body_accueil #restaurants .restaurants__choix article {
     width: 335px;
-    height: 230px;
+    height: 245px;
     margin: 0;
   }
   #body_accueil #restaurants .restaurants__choix article .restaurants__pictures img {
@@ -653,5 +1243,55 @@ footer a {
   }
   #body_accueil footer Li {
     font-size: 0.9em;
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spinreverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes spinreverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes bg_fading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes bg_fading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
   }
 }/*# sourceMappingURL=style.css.map */

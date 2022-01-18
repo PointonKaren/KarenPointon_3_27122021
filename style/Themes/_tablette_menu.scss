@@ -1,9 +1,9 @@
 @import "../Utils/variables";
 @import "../Utils/mixins";
+@import "../Utils/keyframes";
 @media screen and (max-width: 992px) {
     #body_menu {
-        width: 480px;
-        border: springgreen 1px solid;
+        width: 770px;
     }
     #carte {
         .menu__title {

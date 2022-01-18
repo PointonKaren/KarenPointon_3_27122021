@@ -1,5 +1,6 @@
 @import "../Utils/variables";
 @import "../Utils/mixins";
+@import "../Utils/keyframes";
 #body_menu {
     width: 1200px;
     margin: auto;
@@ -55,12 +56,13 @@
             text-transform: uppercase;
             color: $texte;
             border-bottom: 3px $couleur-tertiaire solid;
-            width: 12%;
+            width: 150px;
             margin: auto;
             margin-top: 20px;
             margin-bottom: 20px
         }
         article {
+            cursor: pointer;
             @include article;
             border-radius: 20px;
             padding: 10px 15px 10px 15px;
@@ -100,7 +102,6 @@
                 }
             }
             &:hover {
-                cursor: pointer;
                 .menu__prix {
                     transform: translateX(-70px);
                 }

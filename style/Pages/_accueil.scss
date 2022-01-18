@@ -1,8 +1,51 @@
 @import "../Utils/variables";
 @import "../Utils/mixins";
+@import "../Utils/keyframes";
+
 #body_accueil {
     width: 1200px;
     margin: auto;
+    #bg__loading_spinner {
+        background-color: white;
+        position: absolute;
+        top: 0;
+        width: 1200px;
+        height: 1904px;
+        z-index: 2;
+        -webkit-animation: bg_fading 0.9s forwards 3s;
+                animation: bg_fading 0.9s forwards 3s;
+        .loader {
+            width: 90px;
+            height: 90px;
+            display: inline-block;
+            position: relative;
+            top: 30%;
+            left: 45%;
+        }
+        .loader-quart {
+            border-radius: 50px;
+            border: 6px solid transparent;
+            border-top-color: $couleur-primaire;
+            border-bottom-color: $couleur-primaire;
+            -webkit-animation: spin 2s linear 0s 3;
+                    animation: spin 2s linear 0s 3;
+        }
+        .loader-quart:after {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            right: 5px;
+            bottom: 5px;
+            margin: auto;
+            border-radius: 50px;
+            border: 6px solid transparent;
+            border-top-color: $couleur-secondaire;
+            border-bottom-color: $couleur-secondaire;
+            -webkit-animation: spinreverse 1s linear 0s 6;
+                    animation: spinreverse 1s linear 0s 6;
+        }
+    }
     footer {
         h4 {
             font-size: 1.3em;
@@ -110,8 +153,6 @@
                 border-radius: 15px;
                 margin: auto;
                 margin-bottom: 50px;
-                display: flex;
-                flex-direction: column;
                 justify-content: space-around;
                 height: 300px;
                 .restaurants__pictures {
@@ -120,7 +161,8 @@
                         border-radius: 15px 15px 0px 0px;
                         width: 430px;
                         height: 214px;
-                        object-fit: cover;
+                        -o-object-fit: cover;
+                           object-fit: cover;
                     }
                 }
                 .new {

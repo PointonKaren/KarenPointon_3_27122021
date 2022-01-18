@@ -2,7 +2,16 @@
 @import "../Utils/mixins";
 @media screen and (max-width: 992px) {
     #body_accueil {
-        width: 480px;
+        width: 770px;
+        #bg__loading_spinner {
+            width: 770px;
+            height: 2615px;
+            .loader {
+                position: relative;
+                top: 22%;
+                left: 42%;
+            }
+        }
         footer {
             h4 {
                 font-size: 1.5em;
@@ -19,15 +28,13 @@
     }
     #restaurants {
         .restaurants__choix {
-            height: 1390px;
-            padding: 0;
-        }
-        article {
-            h3 {
-                font-size: 1.5em;
-            }
-            p {
-                font-size: 1.2em;
+            article {
+                h3 {
+                    font-size: 1.5em;
+                }
+                p {
+                    font-size: 1.2em;
+                }
             }
         }
     }

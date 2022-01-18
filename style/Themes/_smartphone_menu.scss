@@ -1,4 +1,6 @@
 @import "../Utils/variables";
+@import "../Utils/mixins";
+@import "../Utils/keyframes";
 @media screen and (max-width: 768px) {
     #body_menu {
         width: 375px;
@@ -15,13 +17,17 @@
     #carte {
         img {
             height: 280px;
+            margin-top: 5px;
         }
         .menu__title {
+            padding-top: 35px;
             h1 {
                 font-size: 1.8em;
                 font-weight: normal;
+                margin-left: 0;
                 position: relative;
-                left: -10px;
+                left: 20px;
+                padding-bottom: 10px;
             }
             .coeur_menu_vide {
                 position: relative;
@@ -29,14 +35,21 @@
             }
             .coeur_menu_plein {
                 position: relative;
-                left: 0;
+                left: -29px;
             }
         }
         .menu {
+            #menu_bouton_commander {
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
             .menu__composition {
                 flex-direction: column;
                 h2 {
                     font-size: 1.1em;
+                    width: 12%;
+                    margin: 0;
+                    margin-left: 20px;
                 }
                 article {
                     width: 315px;
@@ -68,12 +81,10 @@
                         }
                     }
                     &:hover {
-                        cursor: pointer;
                         .menu__prix {
                             transform: translateX(-18px);
                         }
                         .valider {
-                            opacity: 1;
                             transform: translateX(-22px);
                         }
                         .menu__description,
