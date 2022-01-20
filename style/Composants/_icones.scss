@@ -1,24 +1,21 @@
 @import "../Utils/variables";
 @import "../Utils/mixins";
-
+@import "../Utils/keyframes";
 i {
     color: #7e7e7e;
     padding-right: 20px;
     font-size: 1.2em;
 }
-
 .fa-heart {
     font-size: 1.5em;
     width: 5px;
 }
-
 .coeur_accueil {
     .coeur_accueil_vide {
         position: relative;
         top: -30px;
         left: 350px;
     }
-
     .coeur_accueil_plein {
         position: relative;
         top: -30px;
@@ -30,32 +27,22 @@ i {
         transform: scale(0);
         transition: transform 400ms ease-in;
     }
-
     &:hover {
-        &>.coeur_accueil_plein {
+        & > .coeur_accueil_plein {
             transform: scale(1);
         }
-
-        &>.coeur_accueil_vide {
+        & > .coeur_accueil_vide {
             opacity: 0;
             transition: opacity 3000ms;
         }
     }
 }
-
 .coeur_menu {
     cursor: pointer;
-
     .coeur_menu_vide {
-        position: relative;
-        top: 30px;
-        left: -30px;
+        transform: scale(1);
     }
-
     .coeur_menu_plein {
-        position: relative;
-        top: 5px;
-        left: -30px;
         background: linear-gradient($couleur-primaire, $couleur-secondaire);
         background-clip: text;
         -webkit-background-clip: text;
@@ -63,23 +50,19 @@ i {
         transform: scale(0);
         transition: transform 400ms ease-in;
     }
-
     &:hover {
-        &>.coeur_menu_plein {
+        & > .coeur_menu_plein {
             transform: scale(1);
         }
-
-        &>.coeur_menu_vide {
+        & > .coeur_menu_vide {
             opacity: 0;
-            transition: opacity 3000ms;
+            transform: scale(0.7);
+            transition: all 2900ms;
         }
     }
 }
-
-
 .fa-arrow-left {
     color: $texte;
-    ;
     font-size: 0.8em;
     position: relative;
     left: -70px;

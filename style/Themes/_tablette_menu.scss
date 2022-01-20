@@ -1,0 +1,90 @@
+@import "../Utils/variables";
+@import "../Utils/mixins";
+@import "../Utils/keyframes";
+@media screen and (min-width: 770px) {
+    #body_menu {
+        width: 760px;
+        #carte {
+            img {
+                height: 330px;
+            }
+            .menu__title {
+                h1 {
+                    margin: auto;
+                    padding-top: 20px;
+                }
+                .coeur_menu_vide {
+                    font-size: 1.5em;
+                    position: relative;
+                    left: -20px;
+                    top: 28px;
+                }
+                .coeur_menu_plein {
+                    font-size: 1.5em;
+                    position: relative;
+                    left: -49px;
+                    top: 28px;
+                }
+            }
+            .menu {
+                .menu__composition {
+                    h2 {
+                        margin: auto;
+                        margin-top: 20px;
+                    }
+                }
+                article {
+                    height: 50px;
+                    h3 {
+                        font-size: 1em;
+                        margin-left: 25px;
+                    }
+                    .menu__detail {
+                        .menu__description {
+                            font-size: 0.9em;
+                            margin-left: 25px;
+                        }
+                        .menu__prix {
+                            margin-left: -15px;
+                            position: relative;
+                            top: -12px;
+                            font-size: 1em;
+                        }
+                    }
+                }
+                .menu__nom--long {
+                    height: 50px;
+                    .valider {
+                        height: 80px;
+                        position: relative;
+                        top: -45px;
+                        left: -78px;
+                        .check {
+                            position: relative;
+                            top: 35px;
+                            left: 20px;
+                        }
+                    }
+                    &:hover {
+                        .valider {
+                            position: relative;
+                            top: -45px;
+                        }
+                        .menu__description {
+                            position: relative;
+                            top: 0px;
+                        }
+                        .menu__prix {
+                            position: relative;
+                            top: -12px;
+                        }
+                    }
+                }
+                button {
+                    width: 300px;
+                    font-size: 1.4em;
+                }
+            }
+        }
+    }
+}

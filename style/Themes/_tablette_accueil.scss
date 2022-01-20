@@ -1,0 +1,59 @@
+@import "../Utils/variables";
+@import "../Utils/mixins";
+@media screen and (min-width: 769px) {
+    #body_accueil {
+        width: 770px;
+        #bg__loading_spinner {
+            width: 770px;
+            height: 1779px;
+            .loader {
+                position: relative;
+                top: 22%;
+                left: 42%;
+            }
+        }
+        #reservation {
+            width: 480px;
+            border-radius: 25px;
+            .reservation__localisation {
+                border-radius: 25px 25px 0 0;
+            }
+        }
+        #fonctionnement {
+            width: 480px;
+            h2 {
+                text-align: center;
+                margin: 40px 0;
+            }
+            .fonctionnement__button {
+                margin-bottom: 25px;
+            }
+        }
+        #restaurants {
+            border-radius: 15px 15px 0 0;
+            height: 700px;
+            h2 {
+                text-align: center;
+            }
+            .restaurants__choix {
+                article {
+                    h3 {
+                        font-size: 1.3em;
+                    }
+                    p {
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+        footer {
+            h4 {
+                font-size: 1.5em;
+            }
+            li {
+                margin-left: -40px;
+                font-size: 1em;
+            }
+        }
+    }
+}

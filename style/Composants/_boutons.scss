@@ -1,5 +1,6 @@
 @import "../Utils/variables";
 @import "../Utils/mixins";
+@import "../Utils/keyframes";
 
 button {
     background: linear-gradient(175deg, $couleur-secondaire, $couleur-primaire);
@@ -10,7 +11,6 @@ button {
     padding: 10px 15px 10px 15px;
     width: 200px;
     align-self: center;
-
     &:hover {
         cursor: pointer;
         opacity: 85%;
