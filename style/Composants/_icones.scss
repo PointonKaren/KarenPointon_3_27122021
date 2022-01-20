@@ -40,14 +40,9 @@ i {
 .coeur_menu {
     cursor: pointer;
     .coeur_menu_vide {
-        position: relative;
-        top: 30px;
-        left: -30px;
+        transform: scale(1);
     }
     .coeur_menu_plein {
-        position: relative;
-        top: 5px;
-        left: -30px;
         background: linear-gradient($couleur-primaire, $couleur-secondaire);
         background-clip: text;
         -webkit-background-clip: text;
@@ -55,13 +50,14 @@ i {
         transform: scale(0);
         transition: transform 400ms ease-in;
     }
-    &:active {
+    &:hover {
         & > .coeur_menu_plein {
             transform: scale(1);
         }
         & > .coeur_menu_vide {
             opacity: 0;
-            transition: opacity 3000ms;
+            transform: scale(0.7);
+            transition: all 2900ms;
         }
     }
 }

@@ -1,0 +1,68 @@
+@import "../Utils/variables";
+@import "../Utils/mixins";
+@import "../Utils/keyframes";
+@media screen and (min-width: 993px) {
+    #body_accueil {
+        width: 1200px;
+        #bg__loading_spinner {
+            width: 1200px;
+            height: 1922px;
+            .loader {
+                position: relative;
+                top: 30%;
+                left: 45%;
+            }
+        }
+        #restaurants {
+            height: 800px;
+            padding-bottom: 40px;
+            h2 {
+                margin-top: 20px;
+                margin-bottom: 40px;
+            }
+            .restaurants__choix {
+                article {
+                    border-radius: 15px;
+                    margin: auto;
+                    margin-bottom: 80px;
+                    justify-content: space-around;
+                    height: 300px;
+                    width: 430px;
+                    h3 {
+                        font-size: 1.2em;
+                    }
+                    p {
+                        font-size: 1.1em;
+                    }
+                    .restaurants__pictures {
+                        margin: 0;
+                        img {
+                            border-radius: 15px 15px 0px 0px;
+                            width: 430px;
+                            height: 214px;
+                            -o-object-fit: cover;
+                            object-fit: cover;
+                        }
+                    }
+                    .coeur_accueil {
+                        .coeur_accueil_vide {
+                            position: relative;
+                            top: -30px;
+                            left: 350px;
+                        }
+                        .coeur_accueil_plein {
+                            position: relative;
+                            top: -30px;
+                            left: 321px;
+                        }
+                    }
+                    .new {
+                        position: relative;
+                        top: -275px;
+                        left: 330px;
+                    }
+                }
+            }
+        }
+    }
+}

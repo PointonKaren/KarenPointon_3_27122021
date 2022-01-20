@@ -1,0 +1,190 @@
+@import "../Utils/variables";
+@import "../Utils/mixins";
+@import "../Utils/keyframes";
+#body_menu {
+    width: 375px;
+    margin: auto;
+    header {
+        .fa-arrow-left {
+            position: relative;
+            left: -50px;
+        }
+    }
+    #carte {
+        background-color: $fond;
+        padding-bottom: 50px;
+        .menu__pictures {
+            text-align: center;
+            position: relative;
+            top: -15px;
+        }
+        img {
+            width: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            height: 280px;
+            margin-top: 5px;
+        }
+        .menu__title {
+            display: flex;
+            justify-content: space-between;
+            border-radius: 50px 50px 0px 0px;
+            background-color: $fond;
+            position: relative;
+            top: -90px;
+            padding-top: 10px;
+            h1 {
+                text-align: center;
+                font-size: 1.8em;
+                font-weight: normal;
+                padding-left: 20px;
+            }
+            .coeur_menu_vide {
+                position: relative;
+                top: 30px;
+                left: 0;
+            }
+            .coeur_menu_plein {
+                position: relative;
+                left: -29px;
+                top: 30px;
+            }
+        }
+        .menu {
+            @include box;
+            flex-direction: column;
+            position: relative;
+            top: -100px;
+            margin-bottom: -90px;
+            #menu_bouton_commander {
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
+        }
+        .menu__composition {
+            width: 100%;
+            h2 {
+                font-size: 1.1em;
+                font-weight: lighter;
+                text-transform: uppercase;
+                color: $texte;
+                border-bottom: 3px $couleur-tertiaire solid;
+                width: 12%;
+                margin-left: 20px;
+            }
+            article {
+                cursor: pointer;
+                @include article;
+                width: 315px;
+                border-radius: 20px;
+                padding: 5px 5px 8px 30px;
+                margin: auto;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                height: 60px;
+                overflow: hidden;
+                h3 {
+                    margin: 5px 0 5px 0;
+                }
+                h3,
+                .menu__description {
+                    position: relative;
+                    left: -20px;
+                    width: 300px;
+                }
+                .menu__detail {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 420px;
+                    p {
+                        margin: 0 0 -3px 0;
+                        font-size: 1.2em;
+                    }
+                    .menu__description {
+                        width: 280px;
+                        white-space: nowrap;
+                    }
+
+                    p {
+                        font-size: 0.9em;
+                    }
+                }
+                .menu__prix {
+                    font-weight: bold;
+                    position: relative;
+                    left: -40px;
+                    transform: translateX(0px);
+                    transition: transform 400ms ease-in;
+                }
+                .valider {
+                    background-color: $couleur-tertiaire;
+                    border-radius: 0 15px 15px 0;
+                    height: 76px;
+                    width: 62px;
+                    position: relative;
+                    top: -42px;
+                    left: -78px;
+                    transform: translateX(40px);
+                    transition: transform 400ms ease-in;
+                    .check {
+                        width: 0;
+                        border-radius: 50px;
+                        position: relative;
+                        top: 30px;
+                        left: 20px;
+                        color: white;
+                        transition: transform 500ms ease-in;
+                    }
+                }
+                &:hover {
+                    .menu__prix {
+                        transform: translateX(-18px);
+                    }
+                    .valider {
+                        transform: translateX(-22px);
+                        .check {
+                            transform: rotate(360deg);
+                            -webkit-animation-delay: 100ms;
+                            animation-delay: 100ms;
+                        }
+                    }
+                    .menu__description,
+                    h3 {
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        width: 205px;
+                        white-space: nowrap;
+                    }
+                }
+            }
+            .menu__nom--long {
+                height: 80px;
+                .valider {
+                    height: 95px;
+                    position: relative;
+                    top: -65px;
+                    .check {
+                        position: relative;
+                        top: 40px;
+                    }
+                }
+                &:hover {
+                    .valider {
+                        position: relative;
+                        top: -40px;
+                    }
+                    .menu__description,
+                    .menu__prix {
+                        position: relative;
+                        top: 25px;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        li {
+            margin-left: -40px;
+        }
+    }
+}
