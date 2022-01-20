@@ -61,6 +61,7 @@
                 margin-bottom: 20px;
             }
         }
+
         .menu__composition {
             width: 100%;
             h2 {
@@ -180,6 +181,20 @@
                     }
                 }
             }
+        }
+        .menu__entrées {
+            -webkit-animation: menu 1.4s forwards;
+                    animation: menu 1.4s forwards;
+        }
+        .menu__plats {
+            opacity: 0;
+            -webkit-animation: menu 1.4s forwards 1s;
+                    animation: menu 1.4s forwards 1s;
+        }
+        .menu__desserts {
+            opacity: 0;
+            -webkit-animation: menu 1.4s forwards 2s;
+                    animation: menu 1.4s forwards 2s;
         }
     }
     footer {

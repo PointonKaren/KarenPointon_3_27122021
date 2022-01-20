@@ -36,10 +36,15 @@
                 .menu__entrées {
                     position: relative;
                     left: -350px;
+                    animation: menu_desktop 1.8s forwards;
+                }
+                .menu__plats {
+                    animation: menu_desktop 2s forwards 0.7s;
                 }
                 .menu__desserts {
                     position: relative;
                     left: 350px;
+                    animation: menu_desktop 2.2s forwards 1s;
                 }
                 button {
                     width: 500px;
