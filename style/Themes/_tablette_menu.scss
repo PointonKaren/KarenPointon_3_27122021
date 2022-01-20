@@ -45,7 +45,10 @@
                             margin-left: 25px;
                         }
                         .menu__prix {
-                            margin-left: -25px;
+                            margin-left: -15px;
+                            position: relative;
+                            top: -12px;
+                            font-size: 1em;
                         }
                     }
                 }
@@ -67,12 +70,19 @@
                             position: relative;
                             top: -45px;
                         }
-                        .menu__description,
-                        .menu__prix {
+                        .menu__description {
                             position: relative;
                             top: 0px;
                         }
+                        .menu__prix {
+                            position: relative;
+                            top: -12px;
+                        }
                     }
+                }
+                button {
+                    width: 300px;
+                    font-size: 1.4em;
                 }
             }
         }

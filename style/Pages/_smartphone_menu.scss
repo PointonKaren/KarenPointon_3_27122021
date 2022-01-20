@@ -86,6 +86,7 @@
                 overflow: hidden;
                 h3 {
                     margin: 5px 0 5px 0;
+                    font-size: 1.1em;
                 }
                 h3,
                 .menu__description {
@@ -99,47 +100,47 @@
                     width: 420px;
                     p {
                         margin: 0 0 -3px 0;
-                        font-size: 1.2em;
+                        font-size: 0.9em;
                     }
                     .menu__description {
                         width: 280px;
                         white-space: nowrap;
-                    }
-
-                    p {
-                        font-size: 0.9em;
+                        position: relative;
+                        bottom: -5px;
                     }
                 }
                 .menu__prix {
                     font-weight: bold;
                     position: relative;
-                    left: -40px;
-                    transform: translateX(0px);
+                    top: 5px;
+                    transform: translateX(-40px);
                     transition: transform 400ms ease-in;
                 }
                 .valider {
                     background-color: $couleur-tertiaire;
-                    border-radius: 0 15px 15px 0;
                     height: 76px;
                     width: 62px;
                     position: relative;
-                    top: -42px;
+                    top: -40px;
                     left: -78px;
                     transform: translateX(40px);
                     transition: transform 400ms ease-in;
                     .check {
+                        font-size: 1.4em;
                         width: 0;
                         border-radius: 50px;
                         position: relative;
                         top: 30px;
-                        left: 20px;
+                        left: 22px;
                         color: white;
                         transition: transform 500ms ease-in;
                     }
                 }
                 &:hover {
                     .menu__prix {
-                        transform: translateX(-18px);
+                        position: relative;
+                        left: 40px;
+                        transform: translateX(-100px);
                     }
                     .valider {
                         transform: translateX(-22px);
@@ -160,41 +161,58 @@
             }
             .menu__nom--long {
                 height: 80px;
-                .valider {
-                    height: 95px;
+                .menu__prix {
                     position: relative;
-                    top: -65px;
+                    top: -2px;
+                }
+
+                .valider {
+                    height: 100px;
+                    position: relative;
+                    top: -68px;
                     .check {
                         position: relative;
-                        top: 40px;
+                        top: 42px;
                     }
                 }
+                h3 {
+                    width: 280px;
+                }
                 &:hover {
-                    .valider {
+                    .menu__description {
                         position: relative;
-                        top: -40px;
+                        top: 28px;
                     }
-                    .menu__description,
                     .menu__prix {
                         position: relative;
-                        top: 25px;
+                        top: 21px;
+                    }
+                    .valider {
+                        position: relative;
+                        top: -45px;
                     }
                 }
             }
         }
+        button {
+            width: 220px;
+            height: 60px;
+            font-size: 1.1em;
+            border-radius: 50px;
+        }
         .menu__entrées {
             -webkit-animation: menu 1.4s forwards;
-                    animation: menu 1.4s forwards;
+            animation: menu 1.4s forwards;
         }
         .menu__plats {
             opacity: 0;
             -webkit-animation: menu 1.4s forwards 1s;
-                    animation: menu 1.4s forwards 1s;
+            animation: menu 1.4s forwards 1s;
         }
         .menu__desserts {
             opacity: 0;
             -webkit-animation: menu 1.4s forwards 2s;
-                    animation: menu 1.4s forwards 2s;
+            animation: menu 1.4s forwards 2s;
         }
     }
     footer {

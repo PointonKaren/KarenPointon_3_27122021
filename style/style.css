@@ -215,7 +215,7 @@ p {
   }
 }
 button {
-  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  background: linear-gradient(175deg, #ff79da, #9356dc);
   border: 0px;
   border-radius: 20px;
   box-shadow: 2px 3px 4px lightgrey;
@@ -340,7 +340,7 @@ i {
   position: relative;
   top: -30px;
   left: 321px;
-  background: linear-gradient(#9356DC, #FF79DA);
+  background: linear-gradient(#9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -362,7 +362,7 @@ i {
   transform: scale(1);
 }
 .coeur_menu .coeur_menu_plein {
-  background: linear-gradient(#9356DC, #FF79DA);
+  background: linear-gradient(#9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -621,8 +621,8 @@ header h1 {
 #body_accueil #bg__loading_spinner .loader-quart {
   border-radius: 50px;
   border: 6px solid transparent;
-  border-top-color: #9356DC;
-  border-bottom-color: #9356DC;
+  border-top-color: #9356dc;
+  border-bottom-color: #9356dc;
   -webkit-animation: spin 2s linear 0s 3;
   animation: spin 2s linear 0s 3;
 }
@@ -636,8 +636,8 @@ header h1 {
   margin: auto;
   border-radius: 50px;
   border: 6px solid transparent;
-  border-top-color: #FF79DA;
-  border-bottom-color: #FF79DA;
+  border-top-color: #ff79da;
+  border-bottom-color: #ff79da;
   -webkit-animation: spinreverse 1s linear 0s 6;
   animation: spinreverse 1s linear 0s 6;
 }
@@ -709,7 +709,7 @@ header h1 {
   padding-right: 8px;
 }
 #body_accueil #fonctionnement span {
-  background-color: #9356DC;
+  background-color: #9356dc;
   color: white;
   border-radius: 20px;
   padding: 3px 9px 3px 9px;
@@ -731,7 +731,7 @@ header h1 {
   opacity: 1;
 }
 #body_accueil #fonctionnement .fonctionnement__button:hover i {
-  color: #9356DC;
+  color: #9356dc;
 }
 #body_accueil #restaurants {
   display: flex;
@@ -973,7 +973,7 @@ header h1 {
   font-weight: lighter;
   text-transform: uppercase;
   color: #343434;
-  border-bottom: 3px #99E2D0 solid;
+  border-bottom: 3px #99e2d0 solid;
   width: 12%;
   margin-left: 20px;
 }
@@ -993,6 +993,7 @@ header h1 {
 }
 #body_menu #carte .menu__composition article h3 {
   margin: 5px 0 5px 0;
+  font-size: 1.1em;
 }
 #body_menu #carte .menu__composition article h3,
 #body_menu #carte .menu__composition article .menu__description {
@@ -1007,44 +1008,45 @@ header h1 {
 }
 #body_menu #carte .menu__composition article .menu__detail p {
   margin: 0 0 -3px 0;
-  font-size: 1.2em;
+  font-size: 0.9em;
 }
 #body_menu #carte .menu__composition article .menu__detail .menu__description {
   width: 280px;
   white-space: nowrap;
-}
-#body_menu #carte .menu__composition article .menu__detail p {
-  font-size: 0.9em;
+  position: relative;
+  bottom: -5px;
 }
 #body_menu #carte .menu__composition article .menu__prix {
   font-weight: bold;
   position: relative;
-  left: -40px;
-  transform: translateX(0px);
+  top: 5px;
+  transform: translateX(-40px);
   transition: transform 400ms ease-in;
 }
 #body_menu #carte .menu__composition article .valider {
-  background-color: #99E2D0;
-  border-radius: 0 15px 15px 0;
+  background-color: #99e2d0;
   height: 76px;
   width: 62px;
   position: relative;
-  top: -42px;
+  top: -40px;
   left: -78px;
   transform: translateX(40px);
   transition: transform 400ms ease-in;
 }
 #body_menu #carte .menu__composition article .valider .check {
+  font-size: 1.4em;
   width: 0;
   border-radius: 50px;
   position: relative;
   top: 30px;
-  left: 20px;
+  left: 22px;
   color: white;
   transition: transform 500ms ease-in;
 }
 #body_menu #carte .menu__composition article:hover .menu__prix {
-  transform: translateX(-18px);
+  position: relative;
+  left: 40px;
+  transform: translateX(-100px);
 }
 #body_menu #carte .menu__composition article:hover .valider {
   transform: translateX(-22px);
@@ -1064,23 +1066,39 @@ header h1 {
 #body_menu #carte .menu__composition .menu__nom--long {
   height: 80px;
 }
-#body_menu #carte .menu__composition .menu__nom--long .valider {
-  height: 95px;
+#body_menu #carte .menu__composition .menu__nom--long .menu__prix {
   position: relative;
-  top: -65px;
+  top: -2px;
+}
+#body_menu #carte .menu__composition .menu__nom--long .valider {
+  height: 100px;
+  position: relative;
+  top: -68px;
 }
 #body_menu #carte .menu__composition .menu__nom--long .valider .check {
   position: relative;
-  top: 40px;
+  top: 42px;
+}
+#body_menu #carte .menu__composition .menu__nom--long h3 {
+  width: 280px;
+}
+#body_menu #carte .menu__composition .menu__nom--long:hover .menu__description {
+  position: relative;
+  top: 28px;
+}
+#body_menu #carte .menu__composition .menu__nom--long:hover .menu__prix {
+  position: relative;
+  top: 21px;
 }
 #body_menu #carte .menu__composition .menu__nom--long:hover .valider {
   position: relative;
-  top: -40px;
+  top: -45px;
 }
-#body_menu #carte .menu__composition .menu__nom--long:hover .menu__description,
-#body_menu #carte .menu__composition .menu__nom--long:hover .menu__prix {
-  position: relative;
-  top: 25px;
+#body_menu #carte button {
+  width: 220px;
+  height: 60px;
+  font-size: 1.1em;
+  border-radius: 50px;
 }
 #body_menu #carte .menu__entrées {
   -webkit-animation: menu 1.4s forwards;
@@ -1280,7 +1298,10 @@ header h1 {
     margin-left: 25px;
   }
   #body_menu #carte .menu article .menu__detail .menu__prix {
-    margin-left: -25px;
+    margin-left: -15px;
+    position: relative;
+    top: -12px;
+    font-size: 1em;
   }
   #body_menu #carte .menu .menu__nom--long {
     height: 50px;
@@ -1300,10 +1321,17 @@ header h1 {
     position: relative;
     top: -45px;
   }
-  #body_menu #carte .menu .menu__nom--long:hover .menu__description,
-#body_menu #carte .menu .menu__nom--long:hover .menu__prix {
+  #body_menu #carte .menu .menu__nom--long:hover .menu__description {
     position: relative;
     top: 0px;
+  }
+  #body_menu #carte .menu .menu__nom--long:hover .menu__prix {
+    position: relative;
+    top: -12px;
+  }
+  #body_menu #carte .menu button {
+    width: 300px;
+    font-size: 1.4em;
   }
 }
 @-webkit-keyframes menu {
@@ -1577,28 +1605,55 @@ header h1 {
   }
   #body_menu #carte .menu article {
     margin-bottom: 20px;
+    height: 60px;
+  }
+  #body_menu #carte .menu .menu__description {
+    position: relative;
+    top: 8px;
+  }
+  #body_menu #carte .menu .menu__prix {
+    padding-top: 4px;
   }
   #body_menu #carte .menu .menu__entrées {
     position: relative;
     left: -350px;
     -webkit-animation: menu_desktop 1.8s forwards;
-            animation: menu_desktop 1.8s forwards;
+    animation: menu_desktop 1.8s forwards;
+  }
+  #body_menu #carte .menu .valider {
+    padding-bottom: 4px;
   }
   #body_menu #carte .menu .menu__plats {
     -webkit-animation: menu_desktop 2s forwards 0.7s;
-            animation: menu_desktop 2s forwards 0.7s;
+    animation: menu_desktop 2s forwards 0.7s;
   }
   #body_menu #carte .menu .menu__desserts {
     position: relative;
     left: 350px;
     -webkit-animation: menu_desktop 2.2s forwards 1s;
-            animation: menu_desktop 2.2s forwards 1s;
+    animation: menu_desktop 2.2s forwards 1s;
+  }
+  #body_menu #carte .menu .menu__nom--long {
+    height: 60px;
+  }
+  #body_menu #carte .menu .menu__nom--long .menu__prix {
+    padding-top: 8px;
+  }
+  #body_menu #carte .menu .menu__nom--long .valider {
+    height: 85px;
+    position: relative;
+    top: -40px;
+  }
+  #body_menu #carte .menu .menu__nom--long:hover .valider {
+    position: relative;
+    top: -40px;
+  }
+  #body_menu #carte .menu .menu__nom--long:hover .menu__description {
+    position: relative;
+    top: 8px;
   }
   #body_menu #carte .menu button {
     width: 500px;
-    height: 60px;
-    font-size: 1.4em;
-    border-radius: 50px;
   }
 }
 @-webkit-keyframes menu {
