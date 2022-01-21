@@ -11,6 +11,7 @@ i {
     width: 5px;
 }
 .coeur_accueil {
+    cursor: pointer;
     .coeur_accueil_vide {
         position: relative;
         top: -30px;
@@ -27,7 +28,7 @@ i {
         transform: scale(0);
         transition: transform 400ms ease-in;
     }
-    &:hover {
+    &:active {
         & > .coeur_accueil_plein {
             transform: scale(1);
         }
@@ -39,6 +40,7 @@ i {
 }
 .coeur_menu {
     cursor: pointer;
+    font-size: 1.2em;
     .coeur_menu_vide {
         transform: scale(1);
     }
@@ -50,7 +52,7 @@ i {
         transform: scale(0);
         transition: transform 400ms ease-in;
     }
-    &:hover {
+    &:active {
         & > .coeur_menu_plein {
             transform: scale(1);
         }

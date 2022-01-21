@@ -8,22 +8,24 @@
             img {
                 height: 330px;
             }
-            .menu__title {
-                h1 {
-                    margin: auto;
-                    padding-top: 20px;
-                }
+            .coeur_menu {
                 .coeur_menu_vide {
                     font-size: 1.5em;
                     position: relative;
-                    left: -20px;
-                    top: 28px;
+                    left: 680px;
+                    top: -50px;
                 }
                 .coeur_menu_plein {
                     font-size: 1.5em;
                     position: relative;
-                    left: -49px;
-                    top: 28px;
+                    left: 651px;
+                    top: -50px;
+                }
+            }
+            .menu__title {
+                h1 {
+                    margin: auto;
+                    padding-top: 20px;
                 }
             }
             .menu {
@@ -34,7 +36,7 @@
                     }
                 }
                 article {
-                    height: 50px;
+                    height: 55px;
                     h3 {
                         font-size: 1em;
                         margin-left: 25px;
@@ -53,7 +55,7 @@
                     }
                 }
                 .menu__nom--long {
-                    height: 50px;
+                    height: 55px;
                     .valider {
                         height: 80px;
                         position: relative;

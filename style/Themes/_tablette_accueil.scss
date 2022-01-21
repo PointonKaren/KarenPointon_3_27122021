@@ -36,18 +36,43 @@
                 text-align: center;
             }
             .restaurants__choix {
+                height: 650px;
                 article {
+                    width: 300px;
+                    margin-bottom: 30px;
+                    .restaurants__pictures {
+                        img {
+                            width: 300px;
+                        }
+                    }
                     h3 {
                         font-size: 1.3em;
                     }
                     p {
                         font-size: 1.2em;
                     }
+                    .new {
+                        position: relative;
+                        left: 200px;
+                    }
+                }
+                .coeur_accueil {                    
+                    width: 0;
+                    .coeur_accueil_vide {
+                        position: relative;
+                        left: -90px;
+                        top: 195px;
+                    }
+                    .coeur_accueil_plein {
+                        position: relative;
+                        left: -90px;
+                        top: 171px;
+                    }
                 }
             }
         }
         footer {
-            h4 {
+            h1 {
                 font-size: 1.5em;
             }
             li {
