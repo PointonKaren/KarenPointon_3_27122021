@@ -156,7 +156,7 @@ header {
                 margin: auto;
                 margin-bottom: 20px;
                 justify-content: space-around;
-                height: 245px;
+                height: 240px;
                 width: 335px;
                 .restaurants__pictures {
                     margin: 0;
@@ -177,7 +177,7 @@ header {
                     font-size: 0.9em;
                     font-weight: bold;
                     position: relative;
-                    top: -235px;
+                    top: -205px;
                     left: 245px;
                 }
                 h3 {
@@ -188,22 +188,23 @@ header {
                     margin: 0 0 -3px 15px;
                     font-size: 1.1em;
                 }
-                .coeur_accueil_vide {
-                    position: relative;
-                    left: 290px;
-                }
-                .coeur_accueil_plein {
-                    position: relative;
-                    left: 260px;
-                }
+            }
+            .coeur_accueil_vide {
+                position: relative;
+                left: 140px;
+                top: -75px;
+            }
+            .coeur_accueil_plein {
+                position: relative;
+                left: 111px;
+                top: -75px;
             }
         }
     }
     footer {
-        h4 {
+        h1 {
             font-size: 1.1em;
-            margin-bottom: 0;
-            margin-left: 25px;
+            text-align: left;
         }
         Li {
             font-size: 0.9em;

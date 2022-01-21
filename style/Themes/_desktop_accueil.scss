@@ -1,7 +1,7 @@
 @import "../Utils/variables";
 @import "../Utils/mixins";
 @import "../Utils/keyframes";
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 1200px) {
     #body_accueil {
         width: 1200px;
         #bg__loading_spinner {
@@ -19,6 +19,7 @@
             h2 {
                 margin-top: 20px;
                 margin-bottom: 40px;
+                font-size: 1.7em;
             }
             .restaurants__choix {
                 article {
@@ -29,10 +30,10 @@
                     height: 300px;
                     width: 430px;
                     h3 {
-                        font-size: 1.2em;
+                        font-size: 1.4em;
                     }
                     p {
-                        font-size: 1.1em;
+                        font-size: 1.3em;
                     }
                     .restaurants__pictures {
                         margin: 0;
@@ -44,22 +45,28 @@
                             object-fit: cover;
                         }
                     }
-                    .coeur_accueil {
-                        .coeur_accueil_vide {
-                            position: relative;
-                            top: -30px;
-                            left: 350px;
-                        }
-                        .coeur_accueil_plein {
-                            position: relative;
-                            top: -30px;
-                            left: 321px;
-                        }
-                    }
                     .new {
+                        width: 90px;
+                        height: 30px;
+                        font-size: 1.1em;
                         position: relative;
-                        top: -275px;
-                        left: 330px;
+                        top: -255px;
+                        left: 310px;
+                    }
+                }
+                .coeur_accueil {
+                    font-size: 1.4em;
+                    .coeur_accueil_vide {
+                        position: relative;
+                        top: 240px;
+                        left: -150px;
+                        width: 15px;
+                    }
+                    .coeur_accueil_plein {
+                        position: relative;
+                        top: 205px;
+                        left: -150px;
+                        width: 15px;
                     }
                 }
             }
