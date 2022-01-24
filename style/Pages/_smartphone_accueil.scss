@@ -13,8 +13,9 @@ header {
         background-color: white;
         position: absolute;
         top: 0;
+        margin: 0;
         width: 375px;
-        height: 2208px;
+        height: 2285px;
         z-index: 2;
         -webkit-animation: bg_fading 0.9s forwards 3s;
         animation: bg_fading 0.9s forwards 3s;
@@ -23,8 +24,8 @@ header {
             height: 90px;
             display: inline-block;
             position: relative;
-            top: 24%;
-            left: 35%;
+            left: 36%;
+            top: 13%;
         }
         .loader-quart {
             border-radius: 50px;
@@ -50,20 +51,38 @@ header {
             animation: spinreverse 1s linear 0s 6;
         }
     }
-    #reservation {
+    #presentation {
         @include box;
         width: 100%;
-        .reservation__localisation {
-            background-color: #eaeaea;
-            box-shadow: inset 0 12px 10px -10px #8d8d8d;
+        .presentation__localisation {
+            background-color: $bg_form;
+            box-shadow: inset 0 10px 8px -10px #8d8d8d;
             display: flex;
             justify-content: center;
+            height: 50px;
+            input {
+                font-size: 1.1em;
+                height: 30px;
+                width: 160px;
+                background-color: $bg_form;
+                color: $form;
+                border: 1px $bg_form solid;
+                padding-left: 15px;
+                position: relative;
+                left: -15px;
+                top: 10px;
+                &:focus {
+                    outline: none;
+                    color: $form;
+                }
+            }
             .fa-map-marker-alt {
                 position: relative;
-                top: 18px;
+                top: 15px;
+                left: 5px;
             }
         }
-        .reservation__menu {
+        .presentation__menu {
             width: 75%;
             margin: auto;
             margin-top: 20px;
