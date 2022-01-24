@@ -603,8 +603,9 @@ header h1 {
   background-color: white;
   position: absolute;
   top: 0;
+  margin: 0;
   width: 375px;
-  height: 2208px;
+  height: 2285px;
   z-index: 2;
   -webkit-animation: bg_fading 0.9s forwards 3s;
   animation: bg_fading 0.9s forwards 3s;
@@ -772,7 +773,6 @@ header h1 {
 #body_accueil #restaurants .restaurants__choix article {
   box-shadow: 2px 3px 4px lightgrey;
   background-color: white;
-  width: 430px;
   border-radius: 15px;
   margin: auto;
   margin-bottom: 20px;
@@ -998,7 +998,6 @@ header h1 {
   cursor: pointer;
   box-shadow: 2px 3px 4px lightgrey;
   background-color: white;
-  width: 430px;
   width: 315px;
   border-radius: 20px;
   padding: 5px 5px 8px 30px;
@@ -1143,12 +1142,12 @@ header h1 {
   margin-left: -35px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   #body_accueil {
-    width: 770px;
+    width: 768px;
   }
   #body_accueil #bg__loading_spinner {
-    width: 770px;
+    width: 768px;
     height: 1779px;
   }
   #body_accueil #bg__loading_spinner .loader {
@@ -1181,9 +1180,12 @@ header h1 {
     text-align: center;
   }
   #body_accueil #restaurants .restaurants__choix {
+    margin-right: 0;
     height: 650px;
   }
   #body_accueil #restaurants .restaurants__choix article {
+    position: relative;
+    left: 25px;
     width: 300px;
     margin-bottom: 30px;
   }
@@ -1200,18 +1202,15 @@ header h1 {
     position: relative;
     left: 200px;
   }
-  #body_accueil #restaurants .restaurants__choix .coeur_accueil {
-    width: 0;
-  }
   #body_accueil #restaurants .restaurants__choix .coeur_accueil .coeur_accueil_vide {
     position: relative;
-    left: -90px;
+    left: -65px;
     top: 195px;
   }
   #body_accueil #restaurants .restaurants__choix .coeur_accueil .coeur_accueil_plein {
     position: relative;
-    left: -90px;
-    top: 171px;
+    left: -94px;
+    top: 195px;
   }
   #body_accueil footer h1 {
     font-size: 1.5em;
@@ -1311,7 +1310,7 @@ header h1 {
     z-index: -1;
   }
 }
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 768px) {
   #body_menu {
     width: 760px;
   }
@@ -1542,13 +1541,13 @@ header h1 {
   #body_accueil #restaurants .restaurants__choix .coeur_accueil .coeur_accueil_vide {
     position: relative;
     top: 240px;
-    left: -150px;
+    left: -130px;
     width: 15px;
   }
   #body_accueil #restaurants .restaurants__choix .coeur_accueil .coeur_accueil_plein {
     position: relative;
-    top: 205px;
-    left: -150px;
+    top: 240px;
+    left: -170px;
     width: 15px;
   }
 }

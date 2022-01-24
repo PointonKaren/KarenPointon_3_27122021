@@ -1,10 +1,10 @@
 @import "../Utils/variables";
 @import "../Utils/mixins";
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     #body_accueil {
-        width: 770px;
+        width: 768px;
         #bg__loading_spinner {
-            width: 770px;
+            width: 768px;
             height: 1779px;
             .loader {
                 position: relative;
@@ -36,8 +36,11 @@
                 text-align: center;
             }
             .restaurants__choix {
+                margin-right: 0;
                 height: 650px;
                 article {
+                    position: relative;
+                    left: 25px;
                     width: 300px;
                     margin-bottom: 30px;
                     .restaurants__pictures {
@@ -56,17 +59,16 @@
                         left: 200px;
                     }
                 }
-                .coeur_accueil {                    
-                    width: 0;
+                .coeur_accueil {
                     .coeur_accueil_vide {
                         position: relative;
-                        left: -90px;
+                        left: -65px;
                         top: 195px;
                     }
                     .coeur_accueil_plein {
                         position: relative;
-                        left: -90px;
-                        top: 171px;
+                        left: -94px;
+                        top: 195px;
                     }
                 }
             }
