@@ -220,10 +220,13 @@
     }
     footer {
         h1 {
+            font-size: 1.1em;
             text-align: left;
         }
-        li {
-            margin-left: -40px;
+        Li {
+            font-size: 0.9em;
+            width: 250px;
+            margin-left: -35px;
         }
     }
 }
