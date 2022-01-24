@@ -10,7 +10,7 @@
 </head>
 
 <body id="body_accueil">
-    <div id="bg__loading_spinner"><span class="loader loader-quart"></span></div>
+    <!--<div id="bg__loading_spinner"><span class="loader loader-quart"></span></div>-->
     <header>
         <h1>ohmyfood</h1>
     </header>
@@ -18,7 +18,9 @@
     <section id="presentation">
         <div class="presentation__localisation">
             <i class="fas fa-map-marker-alt map"></i>
-            <p>Paris, Belleville</p>
+            <form method="post" action="traitement.org">
+                    <input type="search" name="search" id="search" placeholder="Paris, Belleville" />
+            </form>
         </div>
         <div class="presentation__menu">
             <h2>Réservez le menu qui vous convient</h2>
