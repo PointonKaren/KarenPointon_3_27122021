@@ -614,8 +614,8 @@ header h1 {
   height: 90px;
   display: inline-block;
   position: relative;
-  top: 24%;
-  left: 35%;
+  left: 36%;
+  top: 13%;
 }
 #body_accueil #bg__loading_spinner .loader-quart {
   border-radius: 50px;
@@ -1135,7 +1135,7 @@ header h1 {
   }
   #body_accueil #bg__loading_spinner .loader {
     position: relative;
-    top: 22%;
+    top: 15%;
     left: 42%;
   }
   #body_accueil #presentation {
@@ -1475,7 +1475,6 @@ header h1 {
   }
   #body_accueil #bg__loading_spinner .loader {
     position: relative;
-    top: 30%;
     left: 45%;
   }
   #body_accueil #restaurants {
