@@ -600,23 +600,25 @@ header h1 {
   margin: auto;
 }
 #body_accueil #bg__loading_spinner {
+  display: flex;
+  justify-content: center;
   background-color: white;
   position: absolute;
   top: 0;
+  left: 0;
   margin: 0;
-  width: 375px;
+  width: 100%;
   height: 2285px;
   z-index: 2;
   -webkit-animation: bg_fading 0.9s forwards 3s;
   animation: bg_fading 0.9s forwards 3s;
 }
 #body_accueil #bg__loading_spinner .loader {
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
   display: inline-block;
+  margin-top: 40vh;
   position: relative;
-  left: 36%;
-  top: 13%;
 }
 #body_accueil #bg__loading_spinner .loader-quart {
   border-radius: 50px;
@@ -1147,13 +1149,7 @@ header h1 {
     width: 768px;
   }
   #body_accueil #bg__loading_spinner {
-    width: 768px;
     height: 1779px;
-  }
-  #body_accueil #bg__loading_spinner .loader {
-    position: relative;
-    top: 15%;
-    left: 42%;
   }
   #body_accueil #presentation {
     width: 480px;
@@ -1487,12 +1483,7 @@ header h1 {
     width: 1200px;
   }
   #body_accueil #bg__loading_spinner {
-    width: 1200px;
     height: 1922px;
-  }
-  #body_accueil #bg__loading_spinner .loader {
-    position: relative;
-    left: 45%;
   }
   #body_accueil #restaurants {
     height: 800px;
