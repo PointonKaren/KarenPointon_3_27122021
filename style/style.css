@@ -228,7 +228,6 @@ footer a {
   }
   100% {
     opacity: 0;
-    z-index: -1;
   }
 }
 header h1 {
@@ -559,7 +558,6 @@ header h1 {
   }
   100% {
     opacity: 0;
-    z-index: -1;
   }
 }
 #body_menu {
@@ -943,7 +941,6 @@ header h1 {
   }
   100% {
     opacity: 0;
-    z-index: -1;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1115,7 +1112,6 @@ header h1 {
   }
   100% {
     opacity: 0;
-    z-index: -1;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1269,7 +1265,6 @@ header h1 {
   }
   100% {
     opacity: 0;
-    z-index: -1;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1445,6 +1440,5 @@ header h1 {
   }
   100% {
     opacity: 0;
-    z-index: -1;
   }
 }/*# sourceMappingURL=style.css.map */
